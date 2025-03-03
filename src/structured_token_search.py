@@ -139,14 +139,16 @@ if __name__ == '__main__':
         json_str = tokenizer.decode(tokens['sequences'][0], skip_special_tokens=True, clean_up_tokenization_space=True).strip()
         data = extract_first_json(json_str)
         print(data)
-        val = data.get(feature)
-        if val is None:
+        data = extract_first_json(json_str)
+        if data is None:
             print('val is none')
             val = "missing"
-        if val in d_val_probs:
-            d_val_probs[val] += math.exp(log_prob)
         else:
-            d_val_probs[val] = math.exp(log_prob)
+            val = str(data.get(feature))
+            if val in d_val_probs:
+                d_val_probs[val] += math.exp(log_prob)
+            else:
+                d_val_probs[val] = math.exp(log_prob)
 
     d_val_keys = list(d_val_probs.keys())
     d_val_values = [f'{value:.4f}' for value in d_val_probs.values()]
