@@ -12,4 +12,7 @@ Aimed at use with LLM JSON extraction tasks, CeRTS explores the token tree space
 
 This tool allows the user to quickly explore the entire output space with minimal computational cost. The measured output distribution can then be used to estimate confidence using the probability difference between the two most likely output sequences (Top-2 Delta).
 
+TODO
+The current implementation of the structured token search does not make use of past_key_values to speed up inference.
+
 
