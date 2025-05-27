@@ -121,14 +121,25 @@ if __name__ == '__main__':
 
     text='The age of Rob is 7.'
 
-    input_prompt = f"""
-    <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-    As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-    <|eot_id|><|start_header_id|>user<|end_header_id|>
-    Extract the following information from the following text: {feature} If the information is not available, only output {feature_json_str_missing} and not anything else. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-    <|start_header_id|>assistant<|end_header_id|>
-    """
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                f"You are an NLP tool. Extract the following information from text: {feature}."
+            )
+        },
+        {
+            "role": "user",
+            "content": (
+                f"Extract the following information from the text: {feature}. "
+                f"If the information is not available, output {feature_json_str_missing} and nothing else. "
+                f"Provide the result **only** as a key-value pair with no extra text, using this JSON schema: {feature_json_str}. "
+                f"Text: {text}"
+            )
+        }
+    ]
 
+    input_prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     inputs = tokenizer.encode(input_prompt, return_tensors='pt', add_special_tokens=True).to(model.device)
     net_inputs = {'sequences': inputs}
     results = structured_token_search(model, tokenizer, net_inputs, prob_threshold=prob_threshold)
