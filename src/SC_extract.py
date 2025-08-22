@@ -111,9 +111,6 @@ def uncertainty_prompt(feature, answers):
     return messages 
 
 
-
-
-
 df = pd.read_csv('data/final_notes_for_annotation.csv')
 
 #Does making the search more exhaustive improve the calibration of the output distirbution
@@ -209,7 +206,7 @@ for model_id in ['Qwen/Qwen3-8B']:
                         confidence = int(count) / replicates
                     print(main_response, count, confidence)
                 
-                csvwriter.writerow([patient_id, prompt_idx, temperature, main_response, confidence])
+                csvwriter.writerow([patient_id, temperature, main_response, confidence])
                 print(model_id, feature, idx, (time.time() - t1) / 60, 'mins')
         print('done in', (time.time() - t1) / 60, 'mins')
 
