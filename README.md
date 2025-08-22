@@ -14,6 +14,9 @@ This tool allows the user to quickly explore the entire output space with minima
 
 Use the CeRTS function defined in src/CeRTS.py 
 
+## CeRTS has less overconfidence (red) than Sample Consistency
+<img width="13264" height="3669" alt="confidence_acc_diff_joint" src="https://github.com/user-attachments/assets/fe7bcb7e-ea3b-4745-adbc-6251c653e9a8"/>
+
 Future Work
 - Multiple feature extraction. Currently only intended for one feature at a time.
   - Detect and handle entitiy dependencies.
