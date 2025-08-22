@@ -34,6 +34,7 @@ def extract_first_json(text):
     return None  # No JSON found
 
 def generate_completion(text, model, tokenizer, temperature=1, max_tokens=10000, truncate=False):
+    text = tokenizer.apply_chat_template(text, tokenize=False, add_generation_prompt=True)
     inputs = tokenizer.encode(
             text,
             return_tensors='pt',
@@ -61,108 +62,55 @@ def generate_completion(text, model, tokenizer, temperature=1, max_tokens=10000,
     return completion_text
 
 
-def gen_prompt(text, prompt_idx, feature, feature_json_str, feature_json_str_missing):
-    prompts = [
-    f"""
-    ### System
-    As an NLP tool, extract the following information from the provided text: {feature}.
+def gen_prompt(text, feature, feature_json_str, feature_json_str_missing):
 
-    ### User
-    Extract the following information from the following text: {feature}.  
-    If the information is not available, only output {feature_json_str_missing} and nothing else.  
-    Provide output **only as key:value pairs**, and do not include any additional text.  
-
-    Provide output in the following JSON format:  
-    {feature_json_str}  
-
-    **Text:** {text}
-
-    ### Assistant
-    """, 
-
-    #No missing
-    f"""
-    ### System
-    As an NLP tool, extract the following information from the provided text: {feature}.
-
-    ### User
-    Extract the following information from the following text: {feature}. 
-    Provide output **only as key:value pairs**, and do not include any additional text.
-
-    Provide output in the following JSON format:
-    {feature_json_str}
-
-    **Text:** {text}
-
-    ### Assistant
-    """,
-
-    f"""
-    <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-    As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-    <|eot_id|><|start_header_id|>user<|end_header_id|>
-    Extract the following information from the following text: {feature} If the information is not available, only output {feature_json_str_missing} and not anything else. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-    <|start_header_id|>assistant<|end_header_id|>
-    """, 
-
-    #No missing
-    f"""
-    <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-    As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-    <|eot_id|><|start_header_id|>user<|end_header_id|>
-    Extract the following information from the following text: {feature}. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-    <|start_header_id|>assistant<|end_header_id|>
-    """
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                f"As an NLP tool, extract the following information from the provided text: {feature}."
+            )
+        },
+        {
+            "role": "user",
+            "content": (
+                f"Extract the following information from the text: {feature}. "
+                f"If the information is not available, output {feature_json_str_missing} and nothing else. "
+                f"Provide the result **only** as a key-value pair with no extra text, using this JSON schema: {feature_json_str}. "
+                f"Text: {text}"
+            )
+        }
     ]
 
-    return prompts[prompt_idx]
+    return messages 
 
+def uncertainty_prompt(feature, answers):
 
-def uncertainty_prompt(feature, answers, prompt_idx):
-    prompts = [f"""
-    ### System
-    You are an expert physician, asked to rate the uncertainty of an answer.
-
-    ### Prompt
-    You have extracted the following information from a clinical note: {feature}
-
-    ### User
-    Identify the most common response from the answers and count how many times it occured. Return this information with this format: {{"Response": "INSERT RESPONSE", "Count": "INSERT COUNT"}}
-    Provide output **only as key:value pairs**, and do not include any additional text.
-    
-    Example for extracting blood pressure:
-        Example Responses: ["120/80", "110/90", "120/80"]
-        Example Output: {{"Response": "120/80", "Count": "2"}}
-
-    Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {{"Response": "INSERT RESPONSE", "Count": "INSERT COUNT"}}
-
-    Responses: {json.dumps(answers)}
-    ### Assistant
-    """,
-
-    f"""
-    <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-    You are an expert physician, asked to rate the uncertainty of an answer.
-
-    <|eot_id|><|start_header_id|>user<|end_header_id|>
-    ### Prompt
-    You have extracted the following information from a clinical note: {feature}
-
-    Identify the most common response from the answers and count how many times it occured. If multiple responses occur equally, return the first one. Return this information with this format: {{"Response": "INSERT RESPONSE", "Count": "INSERT COUNT"}}
-    Provide output **only as key:value pairs**, and do not include any additional text.
-    
-    Example for extracting blood pressure:
-        Example Responses: ["120/80", "110/90", "120/80"]
-        Example Output: {{"Response": "120/80", "Count": "2"}}
-
-    Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {{"Response": "INSERT RESPONSE", "Count": "INSERT COUNT"}}
-
-    Responses: {json.dumps(answers)}
-    <|start_header_id|>assistant<|end_header_id|>
-    """
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are an expert physician, asked to rate the uncertainty of an answer."
+            )
+        },
+        {
+            "role": "user",
+            "content": (
+                f"You have extracted the following information from a clinical note: {feature} "
+                f"""Identify the most common response from the answers and count how many times it occured. Return this information with this format: {{"Response": "INSERT RESPONSE", "Count": "INSERT COUNT"}} """
+                f"Provide output **only as key:value pairs**, and do not include any additional text. \n"
+                f"Example for extracting blood pressure:\n"
+                f"""\tExample Responses: ["120/80", "110/90", "120/80"]\n"""
+                f"""\tExample Output: {{"Response": "120/80", "Count": "2"}}\n"""
+                f"""Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {{"Response": "INSERT RESPONSE", "Count": "INSERT COUNT"}}\n"""
+                f"Responses: {json.dumps(answers)}"
+            )
+        }
     ]
 
-    return prompts[prompt_idx]
+    return messages 
+
+
 
 
 
@@ -221,25 +169,6 @@ for model_id in ['Qwen/Qwen3-8B']:
     ]
 
     for feature, feature_json_str, feature_json_str_missing, example_json in feature_space:
-
-        if ('Mixtral' in model_id and feature not in ['Treated with immunotherapy']) or ('Phi' in model_id and feature not in ["Number of discharge medications"]):
-            continue
-        
-        if 'Llama' in model_id or 'Qwen' in model_id or 'Phi' in model_id:
-            if feature_json_str_missing is None:
-                prompt_idx = 3
-            else:
-                prompt_idx = 2
-        else:
-            if feature_json_str_missing is None:
-                prompt_idx = 1
-            else:
-                prompt_idx = 0
-
-        if 'Llama' in model_id or 'Qwen' in model_id or 'Phi' in model_id:
-            uncertainty_prompt_idx = 1
-        else:
-            uncertainty_prompt_idx = 0
         
         filename = f"data/other_confidence_methods/extract_{feature.replace('/', '_')}_SC_LLM_Annot_{model_id.split('/')[1]}.csv"
         t1 = time.time()
@@ -250,7 +179,7 @@ for model_id in ['Qwen/Qwen3-8B']:
             for idx, (patient_id, note) in enumerate(df[['EPIC_MRN', 'NOTE_TEXT']].values):
                 responses = []
                 for _ in range(replicates):
-                    text = gen_prompt(note, prompt_idx, feature, feature_json_str, feature_json_str_missing)
+                    text = gen_prompt(note, feature, feature_json_str, feature_json_str_missing)
                     torch.cuda.empty_cache()
                     gc.collect()
                     output = generate_completion(text, model, tokenizer, truncate=True)
@@ -262,7 +191,7 @@ for model_id in ['Qwen/Qwen3-8B']:
                     responses.append(answer)
 
                 #print(responses)
-                uncertainty_text = uncertainty_prompt(feature, responses, uncertainty_prompt_idx)
+                uncertainty_text = uncertainty_prompt(feature, responses)
                 #print(uncertainty_text)
                 uncertainty_output = generate_completion(uncertainty_text, model, tokenizer, truncate=True)
                 #print(uncertainty_output)

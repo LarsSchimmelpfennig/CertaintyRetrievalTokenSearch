@@ -122,147 +122,36 @@ def structured_exploration(model, tokenizer, net_inputs, prob_threshold=0.05, ma
     print('num steps', i)
     return i, sorted(results, key=lambda x: x[0])
 
-# def gen_prompt(text, prompt_idx, feature, feature_json_str, feature_json_str_missing):
-#     system_message = {
-#         "role": "system",
-#         "content": (
-#             f"You are an NLP tool. Extract the following information from text: {feature}."
-#         ),
-#     }
+def gen_prompt(text, feature, feature_json_str, feature_json_str_missing):
 
-#     # Build the user message depending on whether we include the missing-value rule
-#     if prompt_idx == 0:
-#         user_content = (
-#             f"Extract the following information from the text: {feature}. "
-#             f"If the information is not available, output {feature_json_str_missing} and nothing else. "
-#             f"Provide the result **only** as key-value pairs with no extra text, "
-#             f"using this JSON schema: {feature_json_str}. "
-#             f"Text: {text}"
-#         )
-#     else:  # prompt_idx == 1
-#         user_content = (
-#             f"Extract the following information from the text: {feature}. "
-#             f"Provide the result **only** as key-value pairs with no extra text, "
-#             f"using this JSON schema: {feature_json_str}. "
-#             f"Text: {text}"
-#         )
-
-#     user_message = {"role": "user", "content": user_content}
-
-#     # Minimal assistant stub; most models will overwrite this when generating
-#     assistant_message = {"role": "assistant", "content": ""}
-
-#     return [system_message, user_message, assistant_message]
-
-# def deepseek_prompt(text, prompt_idx, feature, feature_json_str, feature_json_str_missing):
-#     prompts = [
-#         f"""
-#         <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-#         As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-#         <|eot_id|><|start_header_id|>user<|end_header_id|>
-#         Extract the following information from the following text: {feature} If the information is not available, only output {feature_json_str_missing} and not anything else. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-#         <|start_header_id|>assistant<|end_header_id|>
-#         """, 
-
-#         #No missing
-#         f"""
-#         <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-#         As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-#         <|eot_id|><|start_header_id|>user<|end_header_id|>
-#         Extract the following information from the following text: {feature}. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-#         <|start_header_id|>assistant<|end_header_id|>
-#         """
-#     ]
-
-#     return prompts[prompt_idx]
-
-def gen_prompt(text, prompt_idx, feature, feature_json_str, feature_json_str_missing):
-    prompts = [
-    f"""
-    ### System
-    As an NLP tool, extract the following information from the provided text: {feature}.
-
-    ### User
-    Extract the following information from the following text: {feature}.  
-    If the information is not available, only output {feature_json_str_missing} and nothing else.  
-    Provide output **only as key:value pairs**, and do not include any additional text.  
-
-    Provide output in the following JSON format:  
-    {feature_json_str}  
-
-    **Text:** {text}
-
-    ### Assistant
-    """, 
-
-    #No missing
-    f"""
-    ### System
-    As an NLP tool, extract the following information from the provided text: {feature}.
-
-    ### User
-    Extract the following information from the following text: {feature}. 
-    Provide output **only as key:value pairs**, and do not include any additional text.
-
-    Provide output in the following JSON format:
-    {feature_json_str}
-
-    **Text:** {text}
-
-    ### Assistant
-    """,
-
-
-    f"""
-    <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-    As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-    <|eot_id|><|start_header_id|>user<|end_header_id|>
-    Extract the following information from the following text: {feature} If the information is not available, only output {feature_json_str_missing} and not anything else. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-    <|start_header_id|>assistant<|end_header_id|>
-    """, 
-
-    #No missing
-    f"""
-    <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-    As an NLP tool, extract the following information from the following text: {feature}<|im_end|>
-    <|eot_id|><|start_header_id|>user<|end_header_id|>
-    Extract the following information from the following text: {feature}. Provide output only in a key:value pair, and do not include any additional text. Provide output in the following JSON format: {feature_json_str}. Text:{text} <|eot_id|>
-    <|start_header_id|>assistant<|end_header_id|>
-    """
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                f"As an NLP tool, extract the following information from the provided text: {feature}."
+            )
+        },
+        {
+            "role": "user",
+            "content": (
+                f"Extract the following information from the text: {feature}. "
+                f"If the information is not available, output {feature_json_str_missing} and nothing else. "
+                f"Provide the result **only** as a key-value pair with no extra text, using this JSON schema: {feature_json_str}. "
+                f"Text: {text}"
+            )
+        }
     ]
 
-    return prompts[prompt_idx]
+    return messages 
 
 
 #'google/flan-t5-large'
 
 df = pd.read_csv('data/final_notes_for_annotation.csv')
 
-#Does making the search more exhaustive improve the calibration of the output distirbution
-#Llama needs the extra special tokens in the input prompt
-
 bnb_config = BitsAndBytesConfig(
     load_in_8bit=True,
 )
-
-# def build_equal_map(m, n_gpus: int = 4):
-#     """Return a dict that assigns ~equal numbers of layers to each GPU."""
-#     n_layers = m.config.num_hidden_layers
-#     per_gpu   = math.ceil(n_layers / n_gpus)
-
-#     dmap = {"model.embed_tokens": 0}   # embeddings on GPU-0
-#     layer_idx, gpu_idx = 0, 0
-#     while layer_idx < n_layers:
-#         dmap[f"model.layers.{layer_idx}"] = gpu_idx
-#         layer_idx += 1
-#         # bump the GPU when we've filled `per_gpu` layers
-#         if layer_idx % per_gpu == 0 and gpu_idx < n_gpus - 1:
-#             gpu_idx += 1
-
-#     # final layers (norm & head) go on the last GPU we used
-#     dmap["model.norm"]   = gpu_idx
-#     dmap["lm_head"]      = gpu_idx
-#     return dmap
 
 
 #'google/flan-t5-large', 'mosaicml/mpt-7b-instruct' 'google/gemma-3-27b-it'
@@ -274,7 +163,7 @@ model_list = ['Qwen/Qwen2.5-7B-Instruct-1M', 'google/gemma-2-9b-it', 'meta-llama
 
 #from transformers import AutoProcessor, Gemma3ForConditionalGeneration
 
-for model_id in model_list[-1:]:
+for model_id in model_list:
 
     tokenizer = None
     model = None
@@ -290,21 +179,6 @@ for model_id in model_list[-1:]:
         trust_remote_code=True,
         #max_memory={i: "39GiB" for i in range(4)}
     )
-
-    # summary = defaultdict(list)
-    # for name, device in model.hf_device_map.items():
-    #     summary[device].append(name)
-
-    # for gpu in sorted(summary):
-    #     modules = summary[gpu]
-    #     print(f"{gpu}: {len(modules):3d} sub-modules")
-    #     # show the first few module names so you can spot-check
-    #     for m in modules[:5]:
-    #         print(f"    • {m}")
-    #     if len(modules) > 5:
-    #         print("    …")
-
-    #print('eos token', tokenizer.eos_token_id)
 
     g = torch.Generator('cuda')
     terminators = [tokenizer.eos_token_id]
@@ -325,19 +199,6 @@ for model_id in model_list[-1:]:
     ]
 
     for feature, feature_json_str, feature_json_str_missing, example_json in feature_space:
-        #if model_id in ['Qwen/Qwen2.5-7B-Instruct-1M', 'google/gemma-2-9b-it'] and feature != 'Treated with immunotherapy':
-        #    continue
-
-        if 'Llama' in model_id or 'Qwen2.5' in model_id:
-            if feature_json_str_missing is None:
-                prompt_idx = 3
-            else:
-                prompt_idx = 2
-        else:
-            if feature_json_str_missing is None:
-                prompt_idx = 1
-            else:
-                prompt_idx = 0
             
         #print('prompt_idx', prompt_idx)
         
@@ -348,21 +209,12 @@ for model_id in model_list[-1:]:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(['patient_id', 'top_outputs', 'top_probs', 'answer_min_token_prob', 'num_equivalent_runs'])
             for idx, (patient_id, note) in enumerate(df[['EPIC_MRN', 'NOTE_TEXT']].values):
-                
-                # messages = gen_prompt(note, prompt_idx, feature, feature_json_str, feature_json_str_missing)
-                # if 'gemma' in model_id or 'deepseek' in model_id:
-                #     #print('skipping system prompt')
-                #     #remove the system prompt from gemma and deepseek
-                #     messages = messages[1:]
 
-                # input_prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-                # #print(input_prompt)
+                prompt = gen_prompt(note, feature, feature_json_str, feature_json_str_missing)
 
-                # if 'deepseek' in model_id:
-                #     input_prompt = deepseek_prompt(note, prompt_idx, feature, feature_json_str, feature_json_str_missing)
-                # inputs = tokenizer.encode(input_prompt, return_tensors='pt', add_special_tokens=True).to(model.device)
+                prompt_input = tokenizer.apply_chat_template(prompt, tokenize=False, add_generation_prompt=True)
                 
-                inputs = tokenizer.encode(gen_prompt(note, prompt_idx, feature, feature_json_str, feature_json_str_missing), return_tensors='pt', add_special_tokens=True).to(model.device)
+                inputs = tokenizer.encode(prompt_input, return_tensors='pt', add_special_tokens=True).to(model.device)
                 #decoded_prompt = tokenizer.decode(inputs[0], skip_special_tokens=False)
                 #print(decoded_prompt)
                 net_inputs = {'sequences': inputs, 'past_key_values': None}
