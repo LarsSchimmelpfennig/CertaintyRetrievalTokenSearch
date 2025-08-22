@@ -7,12 +7,15 @@ LLM uncertainty estimator for structured information extraction.
 Aimed at use with LLM JSON extraction tasks, CeRTS explores the token tree space to find all outputs above some probability threshold. This is intended for extracting one feature at a time but multiple is supported. The user specifies the minimum cumulative probability threshold and max inference steps to restrict the search space.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/eaf372b4-e622-4faa-949e-3034f3b1a293" height="600px">
+  <img src="https://github.com/user-attachments/assets/eaf372b4-e622-4faa-949e-3034f3b1a293" height="500px">
 </p>
 
 This tool allows the user to quickly explore the entire output space with minimal computational cost. The measured output distribution can then be used to estimate confidence using the probability difference between the two most likely output sequences (Top-2 Delta).
 
 Use the CeRTS function defined in src/CeRTS.py 
+
+## CeRTS has less overconfidence (red) than Sample Consistency
+<img width="13264" height="3669" alt="confidence_acc_diff_joint" src="https://github.com/user-attachments/assets/fe7bcb7e-ea3b-4745-adbc-6251c653e9a8"/>
 
 Future Work
 - Multiple feature extraction. Currently only intended for one feature at a time.
