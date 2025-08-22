@@ -92,6 +92,44 @@ def structured_token_search(model, tokenizer, net_inputs, prob_threshold=0.05, m
     print('num steps', i)
     return i, sorted(results, key=lambda x: x[0])
 
+
+def CeRTS(prompt, model, tokenizer, prob_threshold=0.05, max_steps=100):
+    """
+    Transforms input prompt and performs structured token search using defined args prob_threshold and max_steps.
+    Returns the top response and Top-2 Delta Confidence Score.
+    """
+
+    input_prompt = tokenizer.apply_chat_template(prompt, tokenize=False, add_generation_prompt=True)
+    inputs = tokenizer.encode(input_prompt, return_tensors='pt', add_special_tokens=True).to(model.device)
+    net_inputs = {'sequences': inputs}
+    results = structured_token_search(model, tokenizer, net_inputs, prob_threshold=prob_threshold, max_steps=max_steps)
+    print('len results', len(results))
+    d_val_probs = {} #Combines the probabilities of JSON's with the same value
+    for log_prob, tokens in results:
+        tokens['sequences'] = tokens['sequences'][:, inputs.shape[-1]:]
+        json_str = tokenizer.decode(tokens['sequences'][0], skip_special_tokens=True, clean_up_tokenization_space=True).strip()
+        data = extract_first_json(json_str)
+        print(data)
+        data = extract_first_json(json_str)
+        if data is None:
+            print('val is none')
+            val = "missing"
+        else:
+            val = str(data.get(feature))
+            if val in d_val_probs:
+                d_val_probs[val] += math.exp(log_prob)
+            else:
+                d_val_probs[val] = math.exp(log_prob)
+
+
+    print('done in', (time.time() - t1) / 60, 'mins')
+
+    sorted_d_val_keys = [key for _, key in sorted(zip(d_val_probs.values(), d_val_probs.keys()), reverse=True)]
+    response = sorted_d_val_keys[0]
+    confidence = top_2_delta(sorted(d_val_probs.values()))
+
+    return response, confidence
+
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(device)
@@ -119,7 +157,7 @@ if __name__ == '__main__':
     feature_json_str = """{"Age": "INSERT AGE NUMBER"}"""
     feature_json_str_missing = """{"Age": "Not Available"}"""
 
-    text='The age of Rob is 7.'
+    text= 'The age of Rob is 7.'
 
     messages = [
         {
@@ -139,33 +177,8 @@ if __name__ == '__main__':
         }
     ]
 
-    input_prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    inputs = tokenizer.encode(input_prompt, return_tensors='pt', add_special_tokens=True).to(model.device)
-    net_inputs = {'sequences': inputs}
-    results = structured_token_search(model, tokenizer, net_inputs, prob_threshold=prob_threshold)
-    print('len results', len(results))
-    d_val_probs = {} #Combines the probabilities of JSON's with the same value
-    for log_prob, tokens in results:
-        tokens['sequences'] = tokens['sequences'][:, inputs.shape[-1]:]
-        json_str = tokenizer.decode(tokens['sequences'][0], skip_special_tokens=True, clean_up_tokenization_space=True).strip()
-        data = extract_first_json(json_str)
-        print(data)
-        data = extract_first_json(json_str)
-        if data is None:
-            print('val is none')
-            val = "missing"
-        else:
-            val = str(data.get(feature))
-            if val in d_val_probs:
-                d_val_probs[val] += math.exp(log_prob)
-            else:
-                d_val_probs[val] = math.exp(log_prob)
-
-
-    print('done in', (time.time() - t1) / 60, 'mins')
-
-    sorted_d_val_keys = [key for _, key in sorted(zip(d_val_probs.values(), d_val_probs.keys()), reverse=True)]
-    response = sorted_d_val_keys[0]
-    confidence = top_2_delta(sorted(d_val_probs.values()))
+    response, confidence = CeRTS(messages, model, tokenizer)
 
     print('Response:',response,'Confidence:',confidence)
+
+    
