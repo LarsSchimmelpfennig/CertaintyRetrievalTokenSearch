@@ -110,7 +110,6 @@ def CeRTS(prompt, model, tokenizer, prob_threshold=0.05, max_steps=100):
         json_str = tokenizer.decode(tokens['sequences'][0], skip_special_tokens=True, clean_up_tokenization_space=True).strip()
         data = extract_first_json(json_str)
         print(data)
-        data = extract_first_json(json_str)
         if data is None:
             print('val is none')
             val = "missing"
