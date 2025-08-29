@@ -90,7 +90,7 @@ def structured_token_search(model, tokenizer, net_inputs, prob_threshold=0.05, m
         i += 1
     
     print('num steps', i)
-    return i, sorted(results, key=lambda x: x[0])
+    return sorted(results, key=lambda x: x[0])
 
 
 def CeRTS(prompt, model, tokenizer, prob_threshold=0.05, max_steps=100):
