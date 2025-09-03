@@ -125,7 +125,7 @@ def CeRTS(prompt, model, tokenizer, prob_threshold=0.05, max_steps=100):
 
     sorted_d_val_keys = [key for _, key in sorted(zip(d_val_probs.values(), d_val_probs.keys()), reverse=True)]
     response = sorted_d_val_keys[0]
-    confidence = top_2_delta(sorted(d_val_probs.values()))
+    confidence = top_2_delta(sorted(d_val_probs.values(), reverse=True))
 
     return response, confidence
 
