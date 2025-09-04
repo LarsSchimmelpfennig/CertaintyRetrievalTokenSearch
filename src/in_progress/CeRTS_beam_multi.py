@@ -6,7 +6,7 @@ import os
 import math
 import sys
 
-from CeRTS_utils import canonical_numeric_key, extract_first_json, top_2_delta, reorder_past
+from CeRTS_utils import *
 
 #Keep track of the distirbution of the variable JSON region.
 #When a comma is generated, provide the LLM with the start of the next JSON and then record again.
@@ -248,8 +248,8 @@ if __name__ == '__main__':
     temperature=1
     t1 = time.time()
 
-    features = ["Name", "Age"]
     json_template = {"Name": "INSERT NAME", "Age": "INSERT AGE NUMBER"}
+    features = json_template.keys()
 
     #text= 'The age of Rob is 7.'
     text= '2 years ago Rob turned 18. Today is his birthday and he is having fun.'
