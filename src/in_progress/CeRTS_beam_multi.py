@@ -12,7 +12,7 @@ from CeRTS_utils import *
 #When a comma is generated, provide the LLM with the start of the next JSON and then record again.
 
 @torch.no_grad()
-def multi_beam_search(model, tokenizer, net_inputs, beam_width=5, max_steps=100):
+def multi_beam_search(model, tokenizer, net_inputs, device, beam_width=5, max_steps=100):
     """
     Beam search using PKV caching.
     - Accepts/returns PKV; never calls model._reorder_cache directly.
@@ -127,7 +127,7 @@ def multi_beam_search(model, tokenizer, net_inputs, beam_width=5, max_steps=100)
     return finished
 
 
-def append_assistant_prompt(messages, assistant_prompt, tokenizer):
+def append_assistant_prompt(messages, assistant_prompt, tokenizer, device):
     """
     Encode `messages` using the chat template with an *open* assistant turn,
     then append the raw tokens of `assistant_prompt` (no extra special tokens).
@@ -159,8 +159,20 @@ def append_assistant_prompt(messages, assistant_prompt, tokenizer):
 
     return input_ids  # pass as net_inputs["sequences"]
 
+def _strip_outer_quotes(s: str) -> str:
+    if s is None:
+        return ""
+    s = str(s).strip().rstrip(",")        # defensive: remove trailing comma if any
+    # If it looks like a JSON string, parse it (handles \" etc.)
+    if len(s) >= 2 and s[0] in {'"', "'"} and s[-1] == s[0]:
+        try:
+            s = json.loads(s)
+        except Exception:
+            s = s[1:-1]                   # fallback: just trim symmetric quotes
+    return s
 
-def CeRTS_output_dist(messages, features, model, tokenizer, beam_width=5, max_steps=100):
+
+def CeRTS_output_dist(messages, features, model, tokenizer, device, beam_width=5, max_steps=100):
     answer_distributions = [] # [(answer, score)]
     assistant_prompt = ''
     
@@ -175,10 +187,10 @@ def CeRTS_output_dist(messages, features, model, tokenizer, beam_width=5, max_st
             assistant_prompt += ',"' + feature + '": '
 
         #print(assistant_prompt)
-        inputs = append_assistant_prompt(messages, assistant_prompt, tokenizer)
+        inputs = append_assistant_prompt(messages, assistant_prompt, tokenizer, device)
         #measures the output distribution and merges identical answers
         net_inputs = {'sequences': inputs}  # or include "pkv": precomputed_pkv if you have it
-        results = multi_beam_search(model, tokenizer, net_inputs, beam_width=beam_width, max_steps=max_steps)
+        results = multi_beam_search(model, tokenizer, net_inputs, device, beam_width=beam_width, max_steps=max_steps)
         d_val_probs = {} #Combines the probabilities of JSON's with the same value
         for log_prob, tokens in results:
             gen_text = tokens['gen_text'].strip() #only includes the text from the variable region
@@ -186,25 +198,25 @@ def CeRTS_output_dist(messages, features, model, tokenizer, beam_width=5, max_st
             #This allows the LLM to generate only a response for one feature, if it closes the JSON early there is no penalty.
             if ',' in gen_text:
                 gen_text = gen_text.split(',')[0]
-                json_str = '{"' + feature + '": ' + f'{str(gen_text)}' + '}'
+                #json_str = '{"' + feature + '": ' + f'{str(gen_text)}' + '}'
 
             elif '}' in gen_text:
                 #print('end bracket')
                 gen_text = gen_text.split('}')[0]
-                json_str = '{"' + feature + '": ' + f'{str(gen_text)}' + '}'
+                #json_str = '{"' + feature + '": ' + f'{str(gen_text)}' + '}'
 
-            data = extract_first_json(json_str)
+            #data = extract_first_json(json_str)
+            gen_text = _strip_outer_quotes(gen_text).strip()
 
             #Now the same numeric answers are combined before selecting what the top answer is.
-            if data is None:
+            if gen_text is None:
                 #print('val is none')
                 val = "missing"
             else:
-                raw_val = data.get(feature)
-
-                val = canonical_numeric_key(raw_val)
+                # raw_val = data.get(feature)
+                val = canonical_numeric_key(gen_text)
                 if val is None:                    # not a clean number, keep as trimmed string
-                    val = str(raw_val).strip()
+                    val = str(gen_text).strip()
 
                 if val in d_val_probs:
                     d_val_probs[val] += math.exp(log_prob)
@@ -214,16 +226,10 @@ def CeRTS_output_dist(messages, features, model, tokenizer, beam_width=5, max_st
         answer_distributions.append(sorted(d_val_probs.items(), 
                                            key=lambda item: item[1], reverse=True)) #[(answer, score)]
         
-    print(answer_distributions)
+    return answer_distributions
         
     #return the top anser and the confidence for each feature
-    for feature, answer_dist in zip(features, answer_distributions):
-        #print(feature)
-        #print(answer_dist)
-        response = answer_dist[0][0]
-        #print(answer_dist[0])
-        confidence = top_2_delta([answer_score_tuple[1] for answer_score_tuple in answer_dist])
-        print('Feature:', feature, 'Response:', response, 'Confidence:', confidence)
+    
         
 
 if __name__ == '__main__':
@@ -266,7 +272,7 @@ if __name__ == '__main__':
             "role": "user",
             "content": (
                 f"Extract the following information from the text: {','.join(features)}. "
-                f"""If the information is not available, output "Not Available" for that field. """
+                f"""If the information is not available, output "NA" for that field. """
                 f"Provide the result **only** as a key-value pair with no extra text, using this JSON schema: {json.dumps(json_template)}. "
                 f"Text: {text}"
             )
@@ -274,6 +280,15 @@ if __name__ == '__main__':
     ]
 
     t1 = time.time()
-    CeRTS_output_dist(messages, features, model, tokenizer, beam_width=5, max_steps=100)
+    answer_distributions = CeRTS_output_dist(messages, features, model, tokenizer, device, beam_width=5, max_steps=100)
+
+    for feature, answer_dist in zip(features, answer_distributions):
+        #print(feature)
+        #print(answer_dist)
+        response = answer_dist[0][0]
+        #print(answer_dist[0])
+        confidence = top_2_delta([answer_score_tuple[1] for answer_score_tuple in answer_dist])
+        print('Feature:', feature, 'Response:', response, 'Confidence:', confidence)
+
     print(time.time() - t1, 'sec')
 
