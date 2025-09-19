@@ -1,0 +1,16 @@
+compact_note,asthma,smoking,pneu,common_cold,pain,fever,antibiotics,days_at_home,LLM_asthma,asthma_conf,LLM_smoking,smoking_conf,LLM_pneu,pneu_conf,LLM_common_cold,common_cold_conf,LLM_pain,pain_conf,LLM_fever,fever_conf,LLM_antibiotics,antibiotics_conf,LLM_days_at_home,days_at_home_conf
+"**History**
+Pt reports high fever for 48 hrs, denies resp pain, dyspnea, or cough. Describes significant fatigue and malaise. No recent routine changes or known infectious exposures. Discusses recent stress and travel.
+
+**Physical Examination**
+VS: Temp 103 °F, HR 98 bpm (tachycardic), O2 sat 98%. Lungs clear, no adventitious sounds. Abd: non-tender, no organomegaly. Skin: no rashes/lesions, normal CRT. Neuro: non-focal. Overall: WNL apart from elevated fever.",no,no,no,no,no,high,yes,2,no,0.9999177521766701,no,0.9982033803210396,no,0.6039180500099739,no,0.9990510873620142,no,0.9972456092116214,high,0.9994107026438424,no,0.9997219167778647,0,0.9999156069349675
+"**History**
+Pt reports gradual onset of fatigue over past month, with intermittent HAs relieved by OTC analgesics. Variable sleep quality, tiredness on waking. No dietary changes, recent travel, appetite loss, or significant recent weight changes.
+
+**Physical Examination**
+VS: BP 120/80, HR 72. Head/neck: WNL, no thyroid abnormalities, no LAD. Cardio/resp: Unremarkable. Abd: Normal BS, non-tender, no masses. Neuro: No focal deficits.",no,no,no,no,no,none,no,2,no,0.9985082551270632,no,0.996760506555179,no,0.9905714415001207,no,0.9720981957761433,yes,0.9240893569971589,none,0.9981335507670153,no,0.9994263009120959,0,0.999913580732002
+"**History**
+Pt denies SOB or cough. Reports feeling well overall, w/ no upper resp symptoms. Exercise tolerance normal, engages in daily activities w/o limitations. No recent changes in sleeping/eating patterns, denies unusual fatigue or weight changes.
+
+**Physical Examination**
+RR nl, breath sounds clear & equal bilat w/o wheezes, rales, or rhonchi. CV exam shows RRR, no murmurs/clicks/gallops. O2 sat nl on RA, no resp distress. No peripheral edema, lungs symmetric, no accessory muscle use.",no,no,no,no,no,low,no,3,no,0.9989916453162645,no,0.9989091833136751,no,0.9963005331399939,no,0.9848012930674545,no,0.9997560658867467,none,0.9935132686638423,no,0.9889649644618893,0,0.9999179907332253
