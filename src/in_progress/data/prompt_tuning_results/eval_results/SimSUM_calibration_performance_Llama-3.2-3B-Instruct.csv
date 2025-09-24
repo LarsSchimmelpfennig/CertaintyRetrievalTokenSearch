@@ -1,0 +1,9 @@
+feature,n,brier_score,roc_auc,mean_conf,accuracy,calibration_plot
+asthma,100,0.066324,0.892632,0.911064,0.95,data/SimSUM_calibration_plots/asthma__Llama-3.2-3B-Instruct.png
+smoking,100,0.012148,1.0,0.936181,0.99,data/SimSUM_calibration_plots/smoking__Llama-3.2-3B-Instruct.png
+pneu,100,0.069277,0.915751,0.802102,0.91,data/SimSUM_calibration_plots/pneu__Llama-3.2-3B-Instruct.png
+common_cold,100,0.147444,0.792941,0.774921,0.85,data/SimSUM_calibration_plots/common_cold__Llama-3.2-3B-Instruct.png
+pain,100,0.157469,0.726944,0.732317,0.79,data/SimSUM_calibration_plots/pain__Llama-3.2-3B-Instruct.png
+fever,100,0.19308,0.737492,0.737535,0.81,data/SimSUM_calibration_plots/fever__Llama-3.2-3B-Instruct.png
+antibiotics,100,0.160348,0.591463,0.872511,0.82,data/SimSUM_calibration_plots/antibiotics__Llama-3.2-3B-Instruct.png
+ALL_FEATURES,700,0.115156,0.795752,0.823804,0.874286,data/SimSUM_calibration_plots/ALL_FEATURES__Llama-3.2-3B-Instruct.png
