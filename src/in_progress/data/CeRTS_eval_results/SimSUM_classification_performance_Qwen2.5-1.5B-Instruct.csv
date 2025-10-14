@@ -1,0 +1,8 @@
+feature,type,precision,recall,f1,accuracy,support,invalid_llm_preds
+antibiotics,binary (macro over yes|no),0.8957,0.5071,0.4558,0.792,1000,0
+asthma,binary (macro over yes|no),0.8439,0.9568,0.8899,0.96,1000,0
+common_cold,binary (macro over yes|no),0.7561,0.6689,0.6931,0.818,1000,0
+fever,multiclass macro (high|low|no),0.7849,0.7295,0.6479,0.87,1000,0
+pain,binary (macro over yes|no),0.5918,0.6145,0.6,0.796,1000,0
+pneu,binary (macro over yes|no),0.5094,0.7379,0.441,0.726,1000,0
+smoking,binary (macro over yes|no),0.9949,0.9988,0.9968,0.998,1000,0

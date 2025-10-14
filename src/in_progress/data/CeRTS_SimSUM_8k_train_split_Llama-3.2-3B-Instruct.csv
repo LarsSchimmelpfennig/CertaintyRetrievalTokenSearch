@@ -1,0 +1,988 @@
+compact_note,asthma,smoking,pneu,common_cold,pain,fever,antibiotics,LLM_asthma,asthma_conf,LLM_smoking,smoking_conf,LLM_pneu,pneu_conf,LLM_common_cold,common_cold_conf,LLM_pain,pain_conf,LLM_fever,fever_conf,LLM_antibiotics,antibiotics_conf
+"**History**
+Pt presents c/o prickly cough x several days. No dyspnea but describes burning pain in trachea, esp when coughing. Nasal congestion + occasional sneezing reported. Low-grade fever at home, peak at 100°F. Using OTC meds + fluids with minimal relief. Denies recent travel, known exposures, or other systemic sx.
+
+**Physical Examination**
+Pt appears mildly uncomfortable due to resp sx. Vitals: temp 99.8°F, O2 sat 98% on RA. Resp exam: clear lungs, no wheezing/crackles. Trachea tender on palpation, consistent with pain complaint. Nasal mucosa swollen/erythematous, clear discharge present. No cervical lymphadenopathy, heart sounds normal. Abd soft, non-tender.",no,no,no,yes,yes,low,yes,no,0.9688375468268386,no,0.9706353470664609,no,0.3649683774842954,yes,0.6058428769964842,yes,0.42527261422164675,100,0.3378054516796577,no,0.238520206738611
+"**History**
+Pt reports episodic dizziness x3 weeks, described as spinning sen lasting a few minutes, triggered by sudden head mvmts. No h/o head trauma, falls, or ear infections. Occasional nausea assoc w/ dizziness, no vomiting.
+
+**Physical Examination**
+BP orthostatic: nl. Romberg: +; Dix-Hallpike: + for BPPV. No resting nystagmus. Cardiac & neuro exams WNL.",no,no,no,no,no,no,no,no,0.9888520549186492,no,0.9743270583734907,no,0.9190812341544338,no,0.9411753157642591,no,0.8800776574368464,no,0.9534170268722117,no,0.8823448069246381
+"**History**
+Pt here for routine check-up; recently did strenuous hike w/o issues. No cough, SOB, or resp pain. Pt maintains regular exercise, no limitations. PMH non-contributory; no recent resp infections or exposure to irritants. Pt on a healthy diet, no chronic resp conditions.
+
+**Physical Examination**
+VS: HR 72 bpm, RR 14, BP 120/80 mmHg, O2 sat 98% RA. Chest: normal, symmetrical expansion. Lungs: clear bilaterally; no wheezes, crackles. No chest tenderness or tracheal deviations on palpation. Heart sounds regular, no murmurs. Exam unremarkable.",no,no,no,no,no,low,no,no,0.9962405874622439,no,0.9620804851378776,no,0.9751917403602445,no,0.9817244372583375,no,0.9573786759994003,no,0.9729716440447813,no,0.9371983964454637
+"**History**
+Pt c/o exercise-induced cough x 2 wks, denies SOB or fever. No issues at rest. Smoker, ~1 ppd x 15 yrs. Concerned link to smoking. No recent infections or acute illness.
+
+**Physical Examination**
+Vitals stable, afebrile. Lungs CTA B/L, no wheezing/crackles. CV exam: normal heart sounds, no murmurs or irregularities. O2 sat nl at rest. Post-exercise spirometry: Mild bronchial hyperactivity.",no,yes,no,no,no,no,no,yes,0.5642514759914752,yes,0.7694825151020478,no,0.8100470441313239,no,0.09274349833609963,no,0.7956508896828092,no,0.9062846902953491,no,0.9093287303388448
+"**History**
+Pt reports moderate wt gain over past few months despite consistent diet/ex routine. Also feels colder than usual. Denies fever, dyspnea, CP, blocked nose, sneezing, or cough. Regular exercise routine maintained, no new environmental exposures or meds.
+
+**Physical Examination**
+Gen appearance unremarkable, no distress. Vitals stable. Thyroid slightly enlarged, nontender, no nodules. Cardiac/resp exams unremarkable. No edema/skin changes. Abd soft, normoactive BS, nontender.",no,no,no,no,no,no,no,no,0.9736017246058698,no,0.9733740300934878,no,0.9367975495146226,no,0.9680629716350653,no,0.9257805009335847,no,0.9514029235771524,no,0.9461122810281049
+"**History**
+Pt reports recent episode of generalized fatigue x 1 wk. Intermittent frontal HAs noted, often relieved by resting in dark place. Denies nausea, photophobia, phonophobia. No sig change in diet, maintains usual sleep 7-8 hrs/night. No recent travel or exposure to similar symptoms.
+
+**Physical Examination**
+BP: 118/76 mmHg, HR: 72 bpm, RR: 16/min, Temp: 98.6°F. No neck stiffness or lymphadenopathy. CV and resp exams normal; heart sounds + clear lungs bilaterally. No tenderness/mass in abd exam. Cranial nerves intact, no deficits.",no,no,no,no,no,no,no,no,0.9875516235402066,no,0.9774711533537073,no,0.9394667701311117,no,0.9650994021218654,no,0.8539470220190131,98.6,0.25748052892760287,no,0.4789664594060127
+"**History**
+Pt reports nasal sx (congestion & rhinorrhea) x4 days. Also c/o light cough, esp. in AMs. Notes DOE, such as climbing stairs or brisk walking. Indicates smokes ~0.5 ppd. No ⬆ in cough severity noted. Denies musculoskeletal or pleuritic pain. No recent exposure to ⬆ humidity or respiratory irritants beyond smoking. 
+
+**Physical Examination**
+PE: Nasal mucosa erythematous w/ moderate congestion. Oropharynx mildly erythematous, no exudates. Lungs: clear bilat., no wheezing/crackles. Vitals: HR 78, RR 18, BP 120/80, O2 sat 98% RA. No accessory muscle use or resp. distress at rest. No peripheral edema; sinuses non-tender. Skin/extremities: good perfusion, normal cap refill.",no,yes,no,yes,no,no,no,no,0.9764455234653245,yes,0.4585946834472866,no,0.9375783776184516,yes,0.4553763371810695,no,0.9736475936981223,no,0.7911740613428949,no,0.9350212893027788
+"**History**
+Pt c/o high fever x 2 days, feeling generally unwell with excessive fatigue. No c/o cough or dyspnea. Reports chills, night sweats, and body aches. OTC antipyretics provide temporary relief. Appetite decreased but fluid intake OK. No recent travel or known infectious exposures.
+
+**Physical Examination**
+Pt appears moderately ill, febrile. Vitals: T 102.5°F, HR 95 bpm, BP 120/75, RR 18. No cyanosis or resp distress. Chest: clear BS bilat, no crackles/wheezing. Skin: warm, no rashes/lesions. No lymphadenopathy. Cardiovasc & abd exams unremarkable. Neuro: no focal deficits, CN function and motor strength normal.",no,no,no,no,no,high,no,no,0.9847059124882375,no,0.9780709701179878,no,0.3456042143099115,no,0.9450774775514021,no,0.7257825879313081,high,0.8100839069370386,no,0.8767063232619263
+"**History**
+Pt here for routine check-up. No fever, dyspnea, chest pain, airway pain, sneezing, blocked nose, or cough. No new sx's or exacerbations. Smoker, 10 cigs/day x 15 yrs, interested in quitting with support. No recent health changes or new meds.
+
+**Physical Examination**
+VS WNL. Lungs CTA, no wheezes/crackles. Heart RR, no murmurs/rubs/gallops. No nasal congestion or sinus tenderness. Throat & pharynx/tonsils normal. Abd S/NT. Skin WNL, no lesions. Overall PE normal.",no,yes,no,no,no,no,no,no,0.8910242153623162,yes,0.936549776023512,no,0.9739134831088044,no,0.9587622354237714,no,0.9415196578000393,no,0.9676711203285966,no,0.9438438364995247
+"**History**
+Pt presents w/ high fever x 3 days, c/o fatigue and body aches impacting daily activities. Denies dyspnea or cough. Maintains good hydration and nutrition despite sx. No recent travel, known infectious exposure, or large gatherings. No changes in meds or recent immunizations.
+
+**Physical Examination**
+Pt lethargic but responsive. Temp: 39.1°C, HR: 98 bpm, BP: 120/80 mmHg. SpO2: 98% on RA. Heart and lungs clear to auscultation. No rash or lymphadenopathy. Abd exam unremarkable. Skin turgor normal.",no,no,no,no,no,high,no,no,0.9785640441628406,no,0.9742052271228568,no,0.3629365659612454,no,0.9413849165561449,yes,0.10461114150006734,39.1,0.12322262342109364,39.1,0.4119239880318404
+"**History**
+Pt reports persistent headache x1 week, radiating from temples to back of head. Described as dull, throbbing, exacerbated by stress/lack of sleep, severity varies, worse in afternoon. Denies visual disturbances, N/V.
+
+**Physical Examination**
+VS normal. Neuro exam WNL. Pt alert, oriented, responds appropriately. Scalp palpation: mild tenderness in temporal region, no swelling/redness.",no,no,no,no,no,no,no,no,0.9892358933475442,no,0.9713723628980316,no,0.9614409208881745,no,0.9720431036772809,yes,0.48014827632328233,no,0.9664409063926065,no,0.9306147890534715
+"**History**
+Pt reports bilateral knee pain worsening over months, described as dull ache during physical activities (stairs, walking). No history of knee injury. Denies locking, giving way, or significant swelling. Using OTC pain relievers without much improvement.
+
+**Physical Examination**
+Inspection: no deformity/swelling. ROM WNL, slight pain at extremes. Palpation: joint line tenderness. Strength/sensation in lower ext intact. Lachman, McMurray, varus/valgus stress tests negative.",no,no,no,no,no,no,no,no,0.9875092752898,no,0.9711932409413377,no,0.9640525385720257,no,0.9752596717501687,yes,0.6283064304847477,no,0.9672187745733557,no,0.9283116097582204
+"**History**
+Pt c/o nasal congestion & light cough. Reports scraping tracheal pain, especially during respiration. No dyspnea. No fever. Symptoms persisting for several days, causing discomfort during frequent coughing.
+
+**Physical Examination**
+Vitals WNL. Nasal passages congested w/ mild inflamm. Lungs CTA bilat, no wheezes/crackles. Mild pharyngeal erythema correlating w/ tracheal discomfort. No lymphadenopathy.",no,no,no,yes,yes,no,no,no,0.9690494294696523,no,0.9677767752426936,no,0.8913389686211548,yes,0.5016800304079987,yes,0.7018671703608224,no,0.963945763165431,no,0.8937816406038865
+"**History**
+Pt c/o chronic low back pain in lumbar region x4 mos post-heavy lifting at work. Pain varies, worse w/ standing or lifting. No LE weakness, bladder, or bowel issues.
+
+**Physical Examination**
+Gait normal, posture shows lumbar stiffness. Tenderness at L3-L5, paraspinal muscle spasms on palpation. Limited lumbar ROM d/t pain, neg SLR. No signs of radiculopathy.",no,no,no,no,no,no,yes,no,0.9915444693955137,no,0.970740940110759,no,0.9780366404227538,no,0.9688933472356885,yes,0.7607762634652362,no,0.9734759085921516,no,0.9417620299186698
+"**History**
+Pt c/o recent dizziness, esp when standing quickly from sitting/lie-down. No visual disturb, HA, or palpit. Describes hydration as normal w/ adequate daily fluid intake. Recent labs normal (annual check-up 2m ago).
+
+**Physical Examination**
+VS show orthostatic hypotension w/ drop in SBP from lying to standing (108/72 to 92/68). Pulse steady at 68 bpm. No abnormal heart/lung/abd findings. Neuro exam shows normal reflexes, no focal deficits.",no,no,no,no,no,no,no,no,0.9852340278656371,no,0.9785095407452811,no,0.9685657791271342,no,0.9800274867844857,no,0.8989619196578086,no,0.8976377446698492,no,0.9187199634949501
+"**History**
+Pt presents with dyspnea, worse in AM over the past few weeks, impacting morning activities. Long-standing smoker (~1 pack/day for 20 yrs). No cough, resp pain, or recent med changes. Stable daily routine and no exposure to resp irritants.  
+
+**Physical Examination**
+Pt alert & oriented. Vitals WNL. Resp exam: decreased B/S bilaterally; no wheezing/crackles. No accessory muscle use. CV exam: normal heart sounds, no murmurs. O2 sat: 95% at rest, drops to 89% on exertion. No peripheral edema, cyanosis, or signs of organomegaly; abdomen soft, non-tender, LE w/o swelling.",no,yes,no,no,no,no,yes,no,0.6742565390296755,yes,0.9608642113242978,no,0.8733998915834349,no,0.971515053536207,no,0.8750468589132575,no,0.9254869856428735,no,0.9023560093765771
+"**History**
+Pt presents w/ persistent dry cough x 2 wks. Describes it as non-prod, occurring day & night. Denies dyspnea or resp pain. Adherent to regular asthma meds, but no ∆ in sx. No new allergen or irritant exposures. No recent travel or contact w/ sick individuals.
+
+**Physical Examination**
+VS stable, no abnormalities. Lungs CTA bilat, no wheezes, crackles, or rhonchi. Non-tender chest wall. Pt appears NAD, no signs of resp distress. Heart sounds normal, no murmurs/additional sounds. Rest of PE unremarkable.",yes,no,no,no,no,no,no,yes,0.9367480701305456,no,0.9089883341499001,no,0.835008226107247,no,0.2536370786310797,no,0.8625521260321438,no,0.9225619831369788,no,0.892535144749873
+"**History**
+Pt reports constant cough for 2 wks, non-prod, with occasional throat irritation. Also notes persistent nasal sxs: congestion and rhinorrhea, more bothersome at night, disrupting sleep. Denies dyspnea. Symptoms began post outdoor event with dust/pollen exposure. No recent travel or sick contacts.
+
+**Physical Examination**
+Pt in no acute distress. Lungs CTA bilat, no wheezing/crackles. Nasal mucosa erythematous, mild swelling, clear d/c. No sinus tenderness. Throat: slight post-pharyngeal erythema, no exudate. Rest of exam unremarkable.",no,no,no,yes,yes,no,no,no,0.8796227948284978,no,0.9181571010261227,no,0.8242071148628566,yes,0.5878754263544066,no,0.8914920552741401,no,0.9505943297810423,no,0.9191874798600506
+"**History**
+Pt c/o severe cough x 1 week, assoc. w/ nasal sx incl. congest. & rhinorrhea. Cough is esp. bothersome at night, disturbing sleep. No dyspnea. Nasal dc is clr; occas. sneezing. No changes in mucus color or prsence of blood. Pt denies chills or night sweats.
+
+**Physical Examination**
+VS stable and WNL. Nasal mucosa inflamed w/ clr dc. Oro-pharynx mildly erythematous, no tonsillar exudate/swelling. Lungs CTA, no wheezes/stridor/crackles. CV exam normal; no murmurs. No lymphadenopathy or sinus tenderness. Exam suggests primary upper respiratory tract involvement, minimal to no lower respiratory tract or systemic signs.",no,no,no,yes,no,no,no,no,0.9792116573309543,no,0.9806122796266167,no,0.9030710572565249,yes,0.8712990725279014,no,0.9422993331097029,no,0.9308523148669519,no,0.9024805785639485
+"**History**
+Pt c/o 3-day hx of persistent fatigue and mild HA. No N/V. Reports moderate work stress, no Δ in diet/sleep patterns. No recent travel. Fam hx non-contrib. No recent illness exposures. No allergies known.
+
+**Physical Examination**
+VS WNL. HEENT: unremarkable; no swelling, abnormalities, or tenderness. CV: RRR, no murmurs. Resp: normal rate, clear breath sounds bilat. Abd: soft, non-tender, no organomegaly, bowel sounds present. No neuro deficits. Skin: no rashes or abnl noted.",no,no,no,no,no,no,no,no,0.9824528962197366,no,0.9770891969715031,no,0.9523217941413931,no,0.8212759677203166,no,0.8550338631585515,no,0.951226526441758,no,0.8926936449103352
+"**History**
+Pt c/o low-grade fever x3 days. No cough, dyspnea, or respiratory pain. Mild fatigue but denies SOB or chest discomfort. Sleep and appetite WNL; ADLs largely unaffected. No recent travel or known infectious exposure. Took OTC antipyretics with some relief, but fever fluctuates.
+
+**Physical Examination**
+VS: Temp 99.2°F, HR 76 bpm, BP 120/78 mmHg, RR 18. Pt comfortable, NAD. CV: RRR, no murmurs/gallops/rubs. Lungs: CTA bilat, no wheezes/rales/rhonchi. Abd: soft, non-tender, no masses/organomegaly. Skin: no rashes/lesions. Neuro: non-focal. Extremities: normal ROM, no tenderness/swelling.",no,no,no,no,no,low,yes,no,0.9894687755811593,no,0.9818970470145711,no,0.8990411368190614,no,0.9603377493284494,no,0.9390033521727721,high,0.2005703095612391,no,0.8040143249405647
+"**History**
+Pt reports persistent, non-productive cough ×2 weeks. Denies fever or SOB. Cough worsens at night. Has hx of hay fever, managed with OTC antihistamines. No new meds or sick contacts. No recent travel or changes in routine/environment.
+
+**Physical Examination**
+VS WNL. Afebrile. Lungs: clear BS bilat; no wheeze, rales, or rhonchi. No cervical LAD or sinus tenderness. CV: RRR, no murmurs/gallops/rubs. Oropharynx clear, no PND. No other abnl findings on PE.",no,no,no,no,no,no,no,yes,0.35086830462924246,no,0.8955682662842412,no,0.7892470734980566,yes,0.6308671824723718,no,0.8647243330409642,no,0.9412857178153051,no,0.9118595886307612
+"**History**
+Pt presents with gurgling cough x few days. +muscle pain w/ respiration. Reports mild dyspnea, denies fever. Smoker. Cough disrupts sleep, OTC meds ineffective. 
+
+**Physical Examination**
+Pt mildly distressed, alert. RR slight ↑. Ausc: scattered rhonchi, poor air mvmt bilaterally. TTP over intercostal muscles. No cyanosis or labored breathing. MM moist, afebrile.",no,yes,no,no,yes,no,yes,no,0.9754133113627032,yes,0.9727061928616731,no,0.4823796167518444,no,0.35726619068294807,yes,0.6664694752645914,no,0.9500606275838168,no,0.8828253022177224
+"**History**
+Pt c/o lower back pain x3 wks s/p moving furniture. Pain in lumbar area, no radiation. Denies fever, dysuria, trauma, wt loss. Pain non-radiating, temporary relief with heat, worse with prolonged standing. No recent infections/cold sx.
+
+**Physical Examination**
+VS: BP 130/82, HR 74, Temp 36.7°C, RR 14. Gen: Appears comfortable. Spine: Mild lumbar TTP, no deformities. Paraspinal muscles tight. Neuro: Gait steady, no motor/sensory deficits. CV: Normal S1, S2. Pulm: No crackles/wheezes. Ext: Full ROM, no cyanosis/edema.",no,no,no,no,no,no,no,no,0.9905358256343306,no,0.9785713238595293,no,0.972577814281611,no,0.9508711870184039,yes,0.5180278191858704,36.7°C,0.5904533436284838,no,0.6662702836069361
+"**History**
+
+Pt presents with dyspnea during exercise, recently noted low grade fever. No nasal sx or cough. Hx of well-managed asthma; long-term smoker. Concerned over latest sx impacting daily activities/exercise.
+
+**Physical Examination**
+
+Vitals: Temp 37.8°C, pulse 92 BPM, O2 sat 96% on RA. Lungs: CTA bilat, no wheezes/crackles. CV: RRR, no murmurs. No cervical LAD, normal nasal/throat exam. Skin: moist, no cyanosis/pallor.",yes,yes,no,no,no,low,yes,yes,0.9833461106854424,yes,0.8353039286501072,no,0.5007588055761703,no,0.9222652493765673,no,0.6587381362961249,low,0.152002187043226,no,0.8086576007517248
+"**History**
+Pt reports intermittent HAs x1 month, primarily frontal, mild-moderate, worse with screen time at work. No correlation with specific foods or stressors. OTC pain relievers partially effective. Occasional dry eyes, no visual disturbances.
+
+**Physical Examination**
+BP and HR stable. Neuro exam WNL: intact CNs and reflexes. No sinus or scalp tenderness. Eyes normal, no redness/discharge. Neck supple, no LAD.",no,no,no,no,no,no,no,no,0.6047218653463879,no,0.966428372696334,no,0.9442248898040067,no,0.9358156562803589,no,0.015309212879587475,no,0.9589320844773676,no,0.9473133748656002
+"**History**
+Pt reports 3-day low-grade fever, dyspnea on exertion (DOE), and a productive cough with yellow sputum. No hx of resp conditions. Pt is a heavy smoker with several years of smoking hx. Symptoms prompted medical visit.
+
+**Physical Examination**
+VS: slight temp elevation, stable BP and HR. O2 sat normal at rest, slightly ↓ on exertion. Ausc: scattered rhonchi bilat. No accessory muscle use. Heart sounds WNL, no murmurs. Pt appears mildly uncomfortable but in no acute distress.",no,yes,no,no,no,low,no,no,0.9863101539115722,yes,0.975742528761796,no,0.4909686610645926,no,0.27671543768239526,no,0.7922473516637865,high,0.3632001512003039,no,0.8148387867363981
+"**History**
+Pt c/o occasional lightheadedness and dizziness, mainly mid-morning, improved w/ rest. Sx started ~1 month ago w/o any triggering event. No med changes or major life events reported. Adequate hydration and balanced diet confirmed. No visual disturbances, tinnitus, or balance issues.
+
+**Physical Examination**
+BP shows mild orthostatic changes. HR, RR, and temp WNL. Ear exam: canals clear, no infxn/inflamm. Muscle strength and sensory: normal. LL exam: no edema, normal vascular findings. No cervical tenderness.",no,no,no,no,no,no,no,no,0.9905186487283019,no,0.9805285292670121,no,0.978000902720375,no,0.982311013265304,no,0.9155828729207693,no,0.9558880537644229,no,0.9551388096831547
+"**History**
+Pt c/o persistent low back pain x2 months, worse with sitting/standing. Pain dull, constant, radiates to L buttock/thigh. No recent trauma. Denies fever, cough, CP, or resp issues. Physically active: regular walking, occasional cycling, both reduced due to pain. No sig PMH.
+
+**Physical Examination**
+VS stable. CVS and RS NAD. MSK: tender lumbar paraspinal muscles, no deformities. Neg SLR bilat. Full ROM hips/knees, discomfort in lumbar flex/extend. Normal reflexes, strength, sensation in LE.",no,no,no,no,no,no,no,no,0.989191406219247,no,0.975697056994436,no,0.9830206699967285,no,0.9851127679347917,yes,0.7683929047611765,no,0.9705290897139537,no,0.9342576218436124
+"**History**
+Pt c/o possible lower resp issues, citing recent increase in prolonged physical activity without adequate rest. Reports normal energy levels and no issues in daily activities: no cough, dyspnea, or pain. No hx of chronic resp conditions or exposure to exacerbating environmental factors like dust/pollution.
+
+**Physical Examination**
+VS WNL. Lungs CTA bilat, no wheezes, crackles, or rhonchi. RR stable, non-labored. O2 sat on RA 98%. CV exam: RRR, no murmurs, no peripheral edema. Pulmonary/thoracic exam shows full/equal expansion with normal diaphragmatic excursion.",no,no,no,no,no,low,no,no,0.98792826272564,no,0.9756624968094407,no,0.9632701471598857,no,0.9684591467605849,no,0.9769646836510951,no,0.9475676618010632,no,0.9275481539182855
+"**History**
+Pt c/o persistent cough day & night for 1 wk, dry, non-productive. Reports nasal congestion & rhinorrhea. Denies dyspnea & respiratory pain. +Smoking hx: 1/2 pack/day for 15 yrs.
+
+**Physical Examination**
+VS WNL. Mild nasal congestion observed. Chest: clear bilat, no wheezing, rales, or rhonchi. No RD noted. Oropharynx: non-erythematous, no exudates. Sinus palpation non-tender.",no,yes,no,yes,no,no,no,no,0.9526143205477321,1/2,0.04255413131865038,1/2,0.6247970066585308,1/2,0.9428871081272667,1/2,0.8792035684733831,1/2,0.9022686025545745,1/2,0.8873944557569959
+"**History**
+Pt c/o burning sensation in windpipe, impacting daily activities and sleep, along with low-grade fever. Hx of smoking, notes it worsens the throat pain. No recent dietary changes or travel. Sxs for 3 days, minimal relief with OTC meds.
+
+**Physical Examination**
+Vitals: Temp 99.5°F. Pt mildly distressed but no acute distress. Lungs clear, no wheezes/crackles. Trachea palpation increases burning discomfort, throat shows moderate erythema w/o exudates. No lymphadenopathy. O2 sat 98%. CV exam normal heart sounds, no M/R/G. Abd soft, non-tender, normoactive BS. No rashes.",no,yes,no,yes,yes,low,yes,no,0.9019862945208319,yes,0.9622764988255498,no,0.663983874517862,no,0.8795722964193957,yes,0.18013857952060314,low,0.14759602087997853,no,0.8902504400089297
+"**History**
+Pt presents c/o a 2-week hx of dry, intermittent cough, more frequent at night. Denies fever or dyspnea. No recent travel or sick contact. Reports normal sleep despite coughing and maintains daily energy and activity levels.
+
+**Physical Examination**
+VS WNL. Chest ausc: clear B/L, no wheeze/crackles. CV: norm heart sounds, no murmurs. Abd: benign. Ext: no edema/cyanosis.",no,no,no,no,no,no,yes,no,0.9595996653262602,no,0.9715627141847134,no,0.731097846183268,yes,0.5926123442485567,no,0.883144751224051,no,0.9624795498955118,no,0.8984062354831297
+"**History**
+Pt c/o low-grade fever x3 days. No cough or other major resp sx. Denies recent travel or sick contacts. Mild fatigue only, no sig changes in activities or diet. 
+
+**Physical Examination**
+T: 37.8°C. Vitals stable. Pt appears well, normal skin color, no distress. Lungs CTA bilaterally, heart RRR with no murmurs. Abd soft, nontender, no masses. Rest of exam WNL.",no,no,no,no,no,low,no,no,0.9741294094299072,no,0.9761994993127895,no,0.5762793999141287,no,0.8783119549065427,no,0.8588699710924932,low,0.24755578976182574,no,0.7805584543982285
+"**History**
+Pt presents w/ productive cough for several days, mild dyspnea on exertion. Is a smoker (10+ y) w/ no change in cigarette use or new exposures. Denies recent travel or known contacts w/ respiratory infections. 
+
+**Physical Examination**
+Pt slightly breathless, not in acute distress. Bilateral rhonchi on ausc. No wheezes/crackles. Symmetrical chest expansion w/ mild effort. Vitals: BP WNL, HR slightly elevated but regular, RR mildly ↑, O2 sat at 95% RA. Cardiovascular and abdominal exams unremarkable.",no,yes,no,no,no,no,no,no,0.8487639056537846,yes,0.9586217386804724,no,0.7932922515051285,no,0.7167895530716056,no,0.9042432974075805,no,0.5252562597003653,no,0.8809259366613189
+"**History**  
+Pt c/o persistent fatigue & gen body aches x2 wks. No recent travel hx or sick contacts. Attributing fatigue to long work hours. Usual energy lvls & sleep patterns disrupted. Reports mild HA, denies neuro symptoms. No FHx of autoimmune dz, not on any meds.
+
+**Physical Examination**  
+VS normal. Alert, oriented, no distress. HEENT exam neg. Heart/lung sounds normal, NO wheezes/crackles. Abd soft, non-tender, NL bowel sounds. No lymphadenopathy or musculoskeletal tenderness.",no,no,no,no,no,no,yes,no,0.9866861183345891,no,0.9777522460834017,no,0.9483191461028054,no,0.954681315372881,no,0.13451405927937077,no,0.9612797205847254,no,0.934744762841524
+"**History**
+Pt c/o fatigue for 4 wks, ↓ energy. Denies fever, dyspnea, CP, or airway pain. No sneezing, blocked nose, or cough. No allergen exposure, recent travel. Diet balanced, active lifestyle, stable wt, appetite.
+
+**Physical Examination**
+Pt well-nourished, NAD. Vitals stable. CV and resp exams WNL, clear breath sounds bilaterally. Abd: no tenderness, no masses. No lymphadenopathy, skin unremarkable.",no,no,no,no,no,no,no,no,0.9727363267738365,no,0.9759782266598014,no,0.9422298211983594,no,0.9505016717316599,no,0.9505195605531228,no,0.9596683364285526,no,0.9110957094366992
+"**History**
+Pt c/o acute, localized resp. pain x3 days, worsened by deep breaths or exertion. No fever, cough, or dyspnea reported. Recently started a new high-intensity OOB workout routine, denies trauma. Hx includes mild seasonal allergies. No other significant hx mentioned.
+
+**Physical Examination**
+Pt alert, NAD. VSS, afebrile. Chest exam: clear lung fields, no wheezing. Palpation: tender over L intercostal muscles, no mass. CV: RRR, no murmurs. Skin: no rash/erythema.",no,no,no,no,yes,no,no,no,0.9759262358433973,no,0.9571236380392144,no,0.961908666553189,yes,0.44320101818115,yes,0.6911833811187358,no,0.9733753184399274,no,0.9449455171763732
+"**History**
+Pt c/o dyspnea x1 week, gradual onset, worsening. Denies respiratory pain/discomfort and cough. No aggravating factors ID’d, mild relief w/rest. Occurs mainly w/exertion or climbing stairs, significantly affecting daily activities.
+
+**Physical Examination**
+Pt appears mildly distressed, no acute distress. SpO2 96% on RA, RR 18, HR 78, BP 122/78. Lungs clear bilat, no wheezes/rales/rhonchi. No accessory muscle use or nasal flaring. Heart regular rhythm, no murmurs/gallops. No peripheral edema, CRT <2 sec.",no,no,no,no,no,no,yes,no,0.5405913238992408,no,0.9620743966910849,no,0.29840065977198504,no,0.9436769865674266,no,0.8807090471279331,no,0.8854389214370721,no,0.8794782228207138
+"**History**  
+Pt c/o gradual onset fatigue and muscle aches x1 week. Reports occasional manageable HAs, OTC analgesics provide relief. Recent ↑workload/stress. No recent travel or known infectious exposure. Hydration/appetite normal; BM regular.
+
+**Physical Examination**  
+Pt in no acute distress, VSS. HR regular, no murmurs, rubs, or gallops. Lungs CTA B/L. Abd soft, NTND. No LAD. MSK: No joint swelling/deformities.",no,no,no,no,no,no,no,no,0.9876448860255685,no,0.9795085638910198,no,0.955059246909146,no,0.9605960218084139,no,0.17106599771299869,no,0.9529079556596939,no,0.9539736468251576
+"**History**
+Pt c/o persistent fatigue and general malaise x2 weeks, unrelated to exertion, despite full rest. Denies travel, sick contacts, or new meds. No appetite changes or wt loss. Difficulty with daily activities due to low energy.
+
+**Physical Examination**
+VS WNL. CV and pulm: normal. Abd: soft, NT, no masses. Skin: no rashes/lesions. No LAD.",no,no,no,no,no,no,no,no,0.9823808476432382,no,0.9722064694509567,no,0.9322748819706216,no,0.9634406168046717,no,0.7460319637391082,no,0.9579058600066669,no,0.9373768967216495
+"**History**
+Pt. c/o dyspnea with no cough. Reports nasal congestion, runny nose x few days, and low-grade fever. No significant change in daily activities but notes fatigue. Occasional HAs possibly due to nasal congestion.
+
+**Physical Examination**
+Vitals: T 37.9°C. Chest: symmetric expansion, clear breath sounds bilat. CV: unremarkable. Nasal mucosa erythematous, swollen, increased mucus. No sinus tenderness. No lymphadenopathy. Other systems WNL.",no,no,no,yes,no,low,no,no,0.9867387189593877,no,0.9684608193797114,no,0.7101153772501185,yes,0.44234798990750046,no,0.8565585166857311,low,0.40015724547997605,no,0.8007706581986276
+"**History**
+Pt c/o light cough, nasal congestion, and rhinorrhea, worse in AM. Complains of dyspnea, particularly on waking. Smoking hx noted.
+
+**Physical Examination**
+Mild nasal congestion, slight wheezing on ausc. Lung fields clear. HR and RR WNL, pt mildly SOB at rest. No lymphadenopathy, chest percussion normal.",no,yes,no,yes,yes,no,no,no,0.5419287165816907,yes,0.8722036415108382,no,0.7188695443952413,yes,0.524625715012059,no,0.7509423340537992,no,0.9381895950279582,no,0.84894302982883
+"**History**
+Pt reports gurgling cough x1 week, disrupting sleep and activities. Notes resp muscle pain around ribs/thorax during coughing. No dyspnea. Hx includes chronic smoking, acknowledged as potentially contributory. No other changes noted.
+
+**Physical Examination**
+Ausc: gurgling sounds in central/lower lung fields; no wheezing/crackles. Musculoskel exam: tenderness/swelling in intercostals, consistent w/ strain. Pt NAD. HR, rhythm, and pulses WNL. Sputum characteristics typical of smokers. Subtle intercostal retraction during forceful cough.",no,yes,no,no,yes,no,no,no,0.9748178796244057,yes,0.9546399219050915,no,0.7604194322221812,no,0.8967953609106678,yes,0.33054005679643667,no,0.9594353628285139,no,0.9326030443002684
+"**History**
+Pt here for wellness exam, reports feeling well overall. Regular exercise, no significant illnesses, occasional mild colds since last visit. No familial hereditary conditions noted. Moderate caffeine intake.
+
+**Physical Examination**
+Nourished, vigorous. CV: S1/S2, no murmurs/rubs/gallops. Pulm: no resp distress, clear Lungs. Abd: soft, non-distended, no tenderness. Neuro: intact with responsive DTRs.",no,no,no,no,no,no,no,no,0.9949469125051253,no,0.970196578638275,no,0.33269079370374505,yes,0.9072948117568288,no,0.9455901086801464,no,0.9691589201461681,no,0.9337487082061667
+"**History**
+Pt presents w/ persistent cough x 10 days, dry & non-productive, mainly during the day, less at night. Denies dyspnea. No change in physical activity or exercise tolerance. No significant PMH or recent sick contacts. Non-smoker, works in well-ventilated office. No noted aggravation by environmental/chemical exposures.
+
+**Physical Examination**
+Gen appearance/VS WNL. Chest: clear BS bilat, good air entry, no wheezes/crackles/rhonchi. Resp effort normal, no labored breathing or distress. Cardio: RRR, no murmurs. Oropharynx: normal, no erythema/exudate.",no,no,no,no,no,no,no,no,0.8997442624842055,no,0.9697749698854004,no,0.6900583964494952,yes,0.24325862550879765,no,0.9366290581837005,no,0.9663722927582222,no,0.9068149400492993
+"**History**
+Pt c/o persistent, constant cough for 2 weeks, dry and non-productive. No fever. Denies resp. pain. No travel Hx or contact with illness. Hydration/nutrition status stable, no changes in appetite, no weight loss.
+
+**Physical Examination**
+Pt alert, NAD. Vitals WNL, CV status stable. Thoracic exam: clear Bs bilat, no wheezes/crackles. Chest wall non-tender. No cervical LAD. Abd: soft, non-tender, no masses. Skin: warm, dry, no pallor or cyanosis.",no,no,no,yes,no,no,no,no,0.9417510661826362,no,0.9696079324289146,no,0.3774985212871133,yes,0.36060711556410674,no,0.9315916207543326,no,0.9662886042596903,no,0.9087975262453236
+"**History**
+Pt reports low-grade fever, denies dyspnea. Discussed current smoking habits and implications for resp health. Pt acknowledged and expressed interest in smoking cessation resources.
+
+**Physical Examination**
+Pt well, no distress. Temp: 99.5°F. Lungs: clear bilat, no abn. Heart: normal S1, S2, RRR, no murmurs. Oropharynx & conjunctiva unremarkable. LNs: non-tender, not enlarged. No cyanosis/clubbing in extremities. Skin WNL.",no,yes,no,no,no,low,yes,no,0.9671704807215006,yes,0.017995236817765714,no,0.8841780764264605,no,0.9167931300099657,no,0.8858955587662576,high,0.12870095540890208,no,0.8884983960375004
+"**History**
+Pt reports GI discomfort x3 wks: occ bloating/abd pain post-meals, not relieved by antacids. Nml appetite, denies wt loss, changes in bowel habits, or melena. No GI family hx, diet mainly home-cooked, no recent changes.
+
+**Physical Examination**
+VS normal. Abd: no distention, normoactive BS, diffuse mild tenderness, no guarding or rebound, liver/spleen not palpable, no hernias. Rectal exam deferred.",no,no,no,no,no,no,no,no,0.9803629670044525,no,0.9728816010551985,no,0.9545410785990416,no,0.9526195980883064,yes,0.37212779469354196,no,0.9581025442902769,no,0.8961587747053676
+"**History**
+Pt c/o worsening dyspnea over last 3 days. Reports consistent low-grade fever w/o significant spikes. Symptoms began gradually, dyspnea occurs with minimal exertion (e.g., stairs, chores). No CP, cough, recent travel, exposure to infections, allergies, or pulm hx. 
+
+**Physical Examination**
+Vitals: Low-grade fever 37.5°C, RR 22/min, mild-mod labored breathing. Lung ausc: clear B/L, no wheezing, rales, or rhonchi. No JVD. Cardiac exam: normal heart sounds, no murmur. Physical exam unremarkable: no peripheral edema, cyanosis. Cap refill < 2 sec.",no,no,no,no,no,low,yes,no,0.983167253796379,no,0.9760183171990003,no,0.836793893433931,no,0.9119577541606914,no,0.8442950819365783,low,0.26615771811958355,no,0.9097337237967581
+"**History**
+Pt reports fatigue x3 wks, likely due to work stress. Denies fever, dyspnea, chest pain, sneezing, blocked nose, or cough. Sleep disrupted by frequent waking. No recent infections, travel, diet changes, or weight/appetite changes noted. Unremarkable medical hx.
+
+**Physical Examination**
+VS WNL. Clear chest on ausc, regular heart sounds, no peripheral edema. Skin intact, no rashes/lesions. Neuro exam: no focal deficits.",no,no,no,no,no,no,yes,no,0.9878505580057475,no,0.9758632279764474,no,0.9699534346561115,no,0.9698634136059657,no,0.7183373330302258,no,0.957582613149692,no,0.9534267397062636
+"**History**
+Pt c/o occasional R knee pain, sharp, esp. when climbing stairs or after prolonged walking. No trauma or injuries. No swelling, warmth, locking, or ROM limitations.
+
+**Physical Examination**
+Vitals stable. Right knee: no erythema, swelling, or deformity. TTP over patella. Full ROM with mild discomfort on flexion. Ligament stability tests (-), incl. Lachman's, posterior drawer, varus-valgus. Gait normal.",no,no,no,no,no,no,no,no,0.9886833164893694,no,0.9817711130226915,no,0.9678051353671557,no,0.9717067234675408,yes,0.2019879625889931,no,0.9725333264713819,no,0.939562999913013
+"**History**
+Pt c/o constant cough and light dyspnea. No chest or resp pain. No fever. PMHx positive for asthma. Pt states symptoms have worsened over the past few days despite compliance with asthma meds (inhaler). Usual management strategies not effective.
+
+**Physical Examination**
+Vitals: BP 120/80, HR 78, Temp 98.6°F, RR 18, SpO2 97% RA. Lungs: diffuse ↓ breath sounds, occasional bilateral wheezes, no crackles. Mild accessory muscle use. No cyanosis or clubbing. CV: heart sounds normal, no murmurs. Peripheral pulses: intact.",yes,no,no,yes,no,no,no,yes,0.9885513319163406,no,0.9121361501404849,no,0.4597226036002281,no,0.802823596628825,no,0.8612527431212336,98.6,0.6726232861504622,no,0.6844594328897468
+"**History**
+Pt c/o fatigue and general malaise x2 wks. Denies fever, dyspnea, CP, airway pain, sneezing/blocked nose, and cough. Adheres to asthma mgmt plan, no exacerbations or med changes. No recent travel or known ill contacts. Active in moderate exercise and maintains balanced diet.
+
+**Physical Examination**
+VS: BP 120/80, HR 76, RR 16, SpO2 98% RA. Resp exam: normal breath sounds, no wheezing/rales. CV: normal, no murmurs/abnormal sounds. Abd: soft, non-tender, no masses. Neuro: normal, no focal deficits. Skin: normal color/turgor, no rashes/lesions.",yes,no,no,no,no,no,yes,yes,0.6450050571480708,no,0.9354141250923131,no,0.940467927242776,no,0.909716335100569,no,0.9282310669969044,no,0.918452967600176,no,0.8846867868595248
+"**History**
+Pt c/o mild dyspnea x2 weeks, worse with exertion. No fever, cough. Smoker since teenage years, 0.5 pack/day currently. No recent resp. infections or pollutant exposure.
+
+**Physical Examination**
+Vitals: BP 130/80, HR 78, RR 18, SpO2 96% RA. Lungs CTA, no wheezes/crackles. CVS: RRR, no m/r/g. Pt in no acute distress, full sentences without effort.",no,yes,no,no,no,no,no,no,0.7236805378037269,yes,0.8963609950959237,no,0.9365071159396257,no,0.9432620660150534,no,0.8506140539254656,no,0.9403429375759677,no,0.8891896494595588
+"**History**
+Pt reports persistent cough, worse when lying down, significant dyspnea interrupting sleep. No resp. pain, no fever. Hx of COPD and smoking; states breathing difficulty is pronounced at night, impacting sleep quality.
+
+**Physical Examination**
+Vitals: RR mildly elevated. Lung auscultation: wheezing, decreased breath sounds bilats (lower lobes). No accessory muscle use at rest. O2 sat shows slight hypoxemia. No other pertinent abnormals.",no,yes,no,no,no,no,yes,yes,0.9763553852638288,yes,0.9570555493892619,no,0.19811677972329544,no,0.89982213644208,no,0.8395790708890636,no,0.902248495292307,no,0.8875676743314613
+"**History**  
+Pt presents w/ morning cough x2 weeks, worsening. Dry, occasional clear sputum. Reports low-grade fever x5 days, denies resp. pain. Pt has a 10 yr smoking hx; concerned it may be related but no changes in smoking habits. No changes in appetite, wgt loss, or recent travel.  
+
+**Physical Examination**  
+Vitals stable; temp 99.2°F (37.3°C). Resp exam: lungs clear, no wheezes/crackles. CV exam: normal heart sounds. No palpable lymphadenopathy in neck/axilla. Throat: mild erythema, no exudate/lesions. Abd and skin exams unremarkable.",no,yes,no,no,no,low,no,no,0.9772012832556445,yes,0.6717929304785878,no,0.8691138868992473,no,0.03862313599617889,no,0.9409748898628933,low,0.4230666354722635,no,0.8971323282630136
+"**History**
+Pt reports nasal congestion and rhinorrhea x a few days. Increased sneezing and AM sinus pressure noted. Symptoms started gradually, persist. No fever, fatigue, or dyspnea. No significant past hx of similar symptoms, seasonal allergies, or recent exposure to allergens. No recent travel or illness contact.
+
+**Physical Examination**
+Vitals stable, WNL. Nasal exam: swollen, erythematous turbinates w/ clear discharge, no polyps or FB. Palpation: tender maxillary sinuses. Oral exam: no pharyngeal erythema. Lungs CTA, no adventitious sounds. CV: RRR, no murmurs.",no,no,no,yes,no,no,no,no,0.9917770294817337,no,0.9713550895660085,no,0.8129816491778336,yes,0.7859458297591145,no,0.6426270847700009,no,0.9680035938453511,no,0.9110499829458649
+"**History**
+Pt reports no dyspnea or cough. Denies SOB or wheezing. No resp. issues during stairs, exercise, or daily activities. No use of resp. meds. Maintains regular physical activity without post-activity complications.
+
+**Physical Examination**
+Vitals WNL. Resp. exam: lungs clear, normal breath sounds; no wheezes, rhonchi, or crackles. Cardiac: normal heart sounds, no murmurs/gallops. Pulses strong & equal in all extremities. Gen app: well, no distress.",no,no,no,no,no,low,no,no,0.9849631157240849,no,0.9676708996432665,no,0.9452492385684211,no,0.9680386524572835,no,0.9291997138922071,no,0.9589605553661879,no,0.8703985427029771
+"**History**
+Pt c/o occasional dizziness, more noticeable when standing up quickly. No fainting episodes, active lifestyle. Symptoms intermittent, noticed over past 3 weeks. Suspects dehydration.
+
+**Physical Examination**
+VS stable/WNL. Orthostatic BP shows slight drop on standing. No pallor/cyanosis. Cardiopulm exam unremarkable. Normal ROM in limbs, no edema.",no,no,no,no,no,no,no,no,0.9842171179380487,no,0.9682476673082772,no,0.967535693578119,no,0.9715421347403856,no,0.8952205249775319,no,0.9556041508193457,no,0.9325465353665955
+"**History**
+Pt c/o nasal congestion and discharge x 3 days. Denies resp pain, cough, or fever. Has difficulty sleeping at night due to nasal blockage. OTC decongestants provide limited relief. No similar sx in family. Reports increased outdoor pollen exposure over the past week.
+
+**Physical Examination**
+- Vitals: Stable, afebrile.
+- HEENT: Edematous nasal mucosa w/ clear discharge, boggy turbinates, no throat exudates, normal external ears.
+- Chest: CTA bilat, no wheezes/crackles/rhonchi.
+- CV: RRR, no murmurs/rubs/gallops.
+- Lymph: No cervical LAD.
+- Skin: No rashes/lesions.",no,no,no,yes,no,no,no,no,0.9426681434239692,no,0.9772100641965471,no,0.9229921333418442,yes,0.8361476573122635,no,0.947808756486828,no,0.9583735098839363,no,0.9498852665690386
+"**History**  
+Pt c/o high fever x3 days with nasal congestion and runny nose. No SOB or cough. Denies chills, sweating, but reports fatigue and ↓ appetite. No recent travel or sick contacts. OTC antipyretics taken, partial relief.
+
+**Physical Examination**  
+VS: T 39.2°C, HR 102 bpm, BP 118/74 mmHg. HEENT: Nasal mucosa erythematous, swollen, clear discharge. Throat slightly red, no exudates. TMs normal. Lungs: CTA bilat, no wheezes, rales, or rhonchi. Heart: RRR, no murmurs. Skin: No rashes. LNs: No cervical LAD.",no,no,no,no,no,high,yes,no,0.9741783565747429,no,0.9794249496401805,no,0.7582981665796062,yes,0.47873109214966525,no,0.8582219614867427,39.2,0.036284591751882145,no,0.2982028971563667
+"**History**
+Pt c/o persistent HA, daily for 1 mo. Describes dull, constant ache in temples, worse by mid-afternoon. OTC analgesics provide partial relief. No assoc. visual disturb., N/V, photophobia, or phonophobia. Increased work stress due to deadlines.
+
+**Physical Examination**
+VS WNL. Neuro exam intact; CN II-XII norm. Head/scalp exam: no tenderness or abnorm. Neck/shoulder palpation: mild muscle tension. ENT exam: unremarkable. Eye eval: normal pupil response, EOMs norm.",no,no,no,no,no,no,no,no,0.9700021575982901,no,0.9791263097440944,no,0.9715485718609977,no,0.9765976417869625,yes,0.4875533215828525,no,0.9710784811797158,no,0.9412213305020412
+"**History**
+Pt w/ intermittent LBP x several wks, worse w/ sitting or physical exertion, somewhat relieved by OTC pain meds and rest. No hx of trauma or previous back issues. Denies any urinary sx, leg weakness, or numbness.
+
+**Physical Examination**
+VS stable. Spine inspection WNL. Mild TTP over lumbar region. ROM slightly limited w/ discomfort on flexion. LE neuro exam Nl, no signs of radiculopathy.",no,no,no,no,no,no,no,no,0.9892828761403133,no,0.9797058705983138,no,0.9653855024605558,no,0.9719617597462438,yes,0.1166572800380809,no,0.9681430524465152,no,0.9433324490047047
+"**History**
+Pt reports persistent resp pain, esp during phys act, with dyspnea. No nasal sx or fever. No cough. Symps ongoing for wks, affecting exercise. Pt has hx of smoking, possibly exacerbating current probs.
+
+**Physical Examination**
+Alert, oriented. Vitals stable; lung auscultation shows ↓ breath sounds in lower lobes bilat. No wheezing or crackles. ↑ RR at rest, normalizes after brief recovery post-exertion. Chest normal; slight tenderness over anterior chest. Card exam unremarkable; heart sounds normal.",no,yes,no,no,yes,no,no,no,0.9584574207786974,yes,0.9814248665566593,no,0.9127200998436079,no,0.9709036500163781,yes,0.6086477127541998,no,0.9588923015068461,no,0.9388206632689241
+"**History**
+Pt c/o scraping pain in windpipe, productive cough but no SOB. Admits to smoking, possibly contributing to sx. Discomfort persists throughout day; mod amt sputum with cough.
+
+**Physical Examination**
+- Resp: diminished breath sounds, no wheezing, coarse crackles heard in LL.
+- CV: S1/S2 normal, no murmurs.
+- Vitals: BP 122/78, HR 82, O2 sat 97% RA.",no,yes,no,no,yes,no,yes,no,0.9667015593593484,yes,0.972022639007178,no,0.7305160730513873,no,0.773714270302363,yes,0.15485196800196682,no,0.8651270838225282,no,0.9008232914998644
+"**History**
+Pt c/o persistent abd discomfort x1 week, worse post-meals. Mild nausea, no vomiting. Denies ∆ in bowel habits, melena, or wt loss. Appetite good, no dietary restrictions or known food allergies. No hx of similar sx. Not on Rx meds. No recent travel or GI illness exposure.
+
+**Physical Examination**
+VS stable/WNL. Abd soft, non-distended; mild tenderness noted in epigastric area. No guarding/rebound tenderness. Bowel sounds normal. No hepatosplenomegaly or jaundice. Skin exam unremarkable. CV exam: Regular pulse, no murmur. Resp: Lungs clear bilat.",no,no,no,no,no,no,no,no,0.9896004700445887,no,0.980666528968196,no,0.968244739377432,no,0.9690213631524525,yes,0.12419361491961162,no,0.9647895979945685,no,0.8846096342336512
+"**History**
+Pt c/o resp pain and persistent cough, day and night, w/o nasal sx. Pain described as scraping in trachea, worsening during cough episodes. Sx present for 1 week. No hx of recent URI, bronchitis, or asthma flare-ups. No exposure to irritants/allergens.
+
+**Physical Examination**
+Gen: No acute distress.
+HEENT: No nasal discharge/congestion; throat mild erythema, no exudate.
+Resp: B/L breath sounds clear, no wheezing/rales; mild discomfort on trachea palpation, no accessory muscle usage. Coughing observed.
+CV: HR regular, no murmurs/abnormal heart sounds.
+",no,no,no,yes,yes,no,no,no,0.9707137290765881,no,0.9707815359820763,no,0.5860513000625047,no,0.720508437390869,yes,0.6203652108246873,no,0.9498910182195107,no,0.9114223560864015
+"**History**
+Pt c/o intermittent dizziness x1 month, with assoc light-headedness and unsteadiness. Denies visual dstrbncs, palpitations, wt loss, fever, URI sx, or change in meds/diet. No sig activity/habit changes noted, but dizziness disrupts work concentration.
+
+**Physical Examination**
+VS WNL. CV exam: RRR, no murmurs. Neuro: CNs intact, normal motor strength, sensation, and reflexes. ENT: Ear canals clear, TMs intact, no nystagmus.",no,no,no,no,no,no,yes,no,0.9912083764868428,no,0.9808031687517265,no,0.975703455987821,no,0.9768656237682123,no,0.9341457263546955,no,0.9486917649354294,no,0.9370653033316734
+"**History**
+Pt c/o acute onset LBP started 3 days ago, following lifting heavy object. Describes pain as sharp, localized to lower lumbar area, worsened by movement (bending, twisting). Limited relief with OTC analgesics + heating pads. No assoc. neuro symptoms (no numbness, weakness, tingling in LE). Prior episodes of back pain few, self-resolving.
+
+**Physical Examination**
+Pt alert, mod. discomfort with movement. Spine appears aligned, no deformity. Palpation: tenderness + muscle spasm in lower lumbar region. ROM limited by pain, esp. forward flexion. SLR test neg. bilat. Neuro exam: intact sensation, strength, DTRs in LE.",no,no,no,no,no,no,no,no,0.987063614740688,no,0.9756087703484903,no,0.9760718736167027,no,0.9768482607734903,yes,0.7144135723696737,no,0.9688825525019207,no,0.9497334613489514
+"**History**
+Pt presents with SOB x3 days, no cough, afebrile. Reports nasal congestion and rhinorrhea. Symptoms persistent, impacting daily activities and sleep. OTC meds provide minimal relief. No allergen exposure or recent travel. Appetite and weight unchanged.
+
+**Physical Examination**
+VS: Temp normal, BP WNL, SpO2 95% RA. Pt comfortable at rest, slight tachypnea with exertion. Nasal passages: mild congestion, slight redness, no discharge. Lungs ausc clear B/L, no wheezes/crackles. Heart: normal S1/S2, regular rhythm, no murmurs. Throat unremarkable.",no,no,no,no,no,no,yes,no,0.3548133730248628,no,0.9655014384908299,no,0.6481914456770334,yes,0.6527078894108908,no,0.688024791886336,no,0.8539313132955112,no,0.920401649759047
+"**History**
+Pt presents with persistent cough day and night x2 wks. Reports mild resp pain (chest discomfort during deep breaths and cough). Nasal sx include congestion and runny nose, starting simultaneously with the cough. No dyspnea noted.
+
+**Physical Examination**
+VS WNL. Lungs: scattered rhonchi, no wheezing. Nasal mucosa inflamed (erythema and edema noted). Throat: mild pharyngeal erythema, no exudates, no visible postnasal drip. Cardiac exam: regular rhythm, no murmurs. Pt not in acute distress.",no,no,no,yes,yes,no,no,no,0.8949969565179395,no,0.9435513718223222,no,0.7675342062206267,yes,0.5362822307273536,yes,0.6956054602562304,no,0.9540898041198755,no,0.8911184557598406
+"**History**
+Pt reports a low-grade fever x3 days, describes it as mild/constant; no antipyretics taken. No respiratory pain, dyspnea, or cough. Denies temp fluctuations, rigors, recent travel, exposure to illness, or new activities. Hydration/appetite normal; no wt loss or unusual fatigue beyond mild fever.
+
+**Physical Examination**
+VS: Temp 38°C, HR/RR/BP all WNL. Symmetric chest expansion, clear lungs; no rales/wheezes. Cardiovascular: HRR, no murmurs. Abdomen: soft, non-tender, no masses; normoactive BS. Skin: no rashes or abnormalities. Pt comfortable and cooperative.",no,no,no,no,no,low,no,no,0.9714160978759145,no,0.9678255115684314,no,0.6747835237877788,no,0.9149698059253627,no,0.9223824246646442,high,0.15864079541515813,no,0.8641732922473814
+"**History**
+Pt presents w/ nocturnal dyspnea and dry cough, predominantly at night, persisting for several weeks. Reports disrupted sleep due to breathing issues. Hx of asthma and smoking noted. On inhaled corticosteroids and bronchodilators but admits to inconsistent use. Advised on smoking cessation previously; hasn't attempted recently.
+
+**Physical Examination**
+Gen: NAD.
+Resp: Clear bil. w/ occasional wheeze; no crackles/rales. RR normal. Mild use of accessory muscles. SpO2 95% at rest.
+CV: S1 S2 present; no murmurs/gallops/rubs.
+Vitals: BP 120/80 mmHg, P 75 bpm reg., T 37°C oral.",yes,yes,no,no,no,no,yes,yes,0.9969571609800705,yes,0.17531515040328255,no,0.69266878545568,no,0.7230964657563804,no,0.7085964950225018,no,0.2595256439977871,no,0.9348749313659988
+"**History**
+Pt c/o intermittent throbbing HA in frontal region for several wks. HA occurs late day, sometimes w/ mild photophobia, but no N/V. Reports ↑ stress at work, no major life events. Uses OTC analgesics occasionally w/ moderate relief. No hx of head trauma.
+
+**Physical Examination**
+Neuro exam WNL. CN II-XII intact. Mild tenderness over frontal sinuses on palpation. BP and HR stable. Fundoscopy: no papilledema. No neck stiffness or evidence of infection.",no,no,no,no,no,no,no,no,0.9892410566078241,no,0.9789540716370392,no,0.9688407796233186,no,0.9429458897952167,yes,0.07036028181587434,no,0.9622177397598138,no,0.927251734191075
+"**History**
+Pt presents with persistent, localized HA x3 weeks. Pains occur mainly PM, described as throbbing around temples. Denies visual disturbances, N/V, or phono/photophobia. Regular work hours; no recent changes in sleep or diet.
+
+**Physical Examination**
+Pt A&O. BP 125/80. CVS: normal S1/S2, no murmurs/added sounds. Neuro: no focal deficits, CN II-XII intact. No tenderness on palpation of temporal/scalp region.",no,no,no,no,no,no,no,no,0.9744997365030891,no,0.9621184331001822,no,0.9487291921914721,no,0.966998087610387,no,0.07487369892899592,no,0.952627158156146,no,0.8961343746305657
+"**History**
+Pt here for routine check-up. States overall good health, no c/o or s/sx of fever, SOB, CP, sneezing, or cough. Reports balanced diet, regular exercise, 7-8 hrs sleep. No recent travel, sick contacts, or stressors. Takes daily MV, no recent OTC meds.
+
+**Physical Examination**
+VS: WNL. Heart: RRR, no m/r/g. Lungs: CTA B/L. Abd: soft, NT, no masses. Ext: no edema. Skin: intact, no r/l.",no,no,no,no,no,no,no,no,0.9881070211566315,no,0.9782309784770201,no,0.981775925932734,no,0.9855494547751916,no,0.9523745854520765,no,0.9673354280653533,no,0.9442428416002381
+"**History**
+Pt. with recent low-grade fever lasting a few days. No dyspnea or cough. Fatigue present but ADLs mostly unaffected. Denies recent sick contacts and maintains good hygiene. No travel in the past month. Reports feeling general apathy and mild malaise. Only OTC antipyretics taken. Regular activities and daily routines are mostly maintained. Slight sleep disruption due to fever discomfort.
+
+**Physical Examination**
+Vs: Temp 99.9°F, HR and BP WNL, Resp rate normal. Clear lungs, no wheezes/crackles. CV: normal S1/S2, no murmurs or gallops. Abd: soft, nontender, normoactive BS. No lymphadenopathy. Mild fatigue noted, alert and oriented. Gen physical exam shows no significant abn.",no,no,no,no,no,low,no,no,0.9857740191067567,no,0.98309492143612,no,0.7163107901352398,no,0.9400337004147988,no,0.8514631715940174,high,0.04206501942032648,no,0.7697392007303266
+"**History**
+Pt c/o intermittent, mild abd discomfort x3 wks. Pain is dull, in lower R quadrant, non-radiating. BMs regular, no changes in stool. No N/V or appetite changes. Diet balanced, no hx of recurrent GI issues.
+
+**Physical Examination**
+VS stable. Abd palpation: mild tenderness in lower R quadrant, no rebound/guarding. Bowel sounds active/present in all quadrants. No organomegaly. Cardiovascular and respiratory exams unremarkable.",no,no,no,no,no,no,no,no,0.9834869895590996,no,0.971643462478145,no,0.9590612990296162,no,0.9635914465876154,yes,0.008495941915706573,no,0.9604229560036981,no,0.9040810084929584
+"**History**
+Pt reports worsened dyspnea esp in mornings. Denies cough or fever. Smoker; pt believes smoking may worsen sx. No recent infections or change in activity levels. No recent allergen exposure or occupational irritants.
+
+**Physical Examination**
+Pt in mild resp distress, increased effort in AM. Elevated RR at rest. Lungs: wheezing, no rales/crackles. No cyanosis/clubbing. Normal heart sounds. Vitals WNL except RR variations.",no,yes,no,no,no,no,no,yes,0.9356838416984955,yes,0.961658536832173,no,0.8365332304412407,no,0.8089161345646161,no,0.7956339571095081,no,0.9069707590139805,no,0.8782932535644505
+"**History**
+Pt reports slight fever x3 days, no cough. Describes fatigue and aches but remains functional. Significant smoking hx; amount and duration unspecified. No additional sx noted.
+
+**Physical Examination**
+VS: Temp 37.8°C. No cough or resp distress observed. Chest: Clear BS bilaterally. CV: Normal heart sounds. Abdominal, neuro, and MSK exams unremarkable. Skin: Warm, dry, no rashes/lesions.",no,yes,no,no,no,low,no,no,0.9860154326262485,yes,0.9532694928834724,no,0.8821333077279387,no,0.9426923520953245,no,0.3457488974730156,no,0.09732255754597535,no,0.8820558260323187
+"**History**
+Pt reports occasional lightheadedness when rising quickly from sitting/lying, resolving within seconds. Well-hydrated and eating balanced diet. No exercise tolerance changes, Rx changes, or lifestyle changes. No syncope or falls noted.
+
+**Physical Examination**
+Orthostatic vitals: slight drop in systolic BP from 118/70 supine to 105/70 standing; HR rose from 72 bpm to 82 bpm. Normal cardiovascular and respiratory assessments. No carotid bruits. Muscle strength and reflexes N within normal limits.",no,no,no,no,no,no,no,no,0.9915419557599874,no,0.9757256271827673,no,0.9545176470409862,no,0.9778778824351931,no,0.8596875566095189,no,0.938861284355354,no,0.907155833793901
+"**History**
+Pt c/o light cough persisting for several days. Also reports nasal congestion and runny nose, moderate impact on ADLs. Gradual symptom onset, no hx of recent travel, sick contacts, or allergen exposure. Limited relief from OTC decongestants. Staying hydrated and resting, seeks further eval and mgmt.
+
+**Physical Examination**
+VS WNL. Nasal mucosa: mild erythema and swelling, clear discharge B/L. Oropharynx: non-erythematous, no exudates. Lung ausc: clear BSS, no wheezing/crackles/consolidation. No cervical LAD. Pt alert, NAD.",no,no,no,yes,no,no,yes,no,0.9753532846952502,no,0.9716542092344408,no,0.7307811478175326,yes,0.5086502294648769,no,0.9019111124400234,no,0.9332605805921257,no,0.92163545499461
+"**History**
+Pt reports nasal congestion and a sev productive cough x 7 days, disrupting sleep and daily act. No chest pain noted despite the severity of the cough. Tried OTC decongestants and antitussives with minimal relief. Denies other resp symptoms.
+
+**Physical Examination**
+Chest clear - no wheezes or crackles. Nasal mucosa swollen, no discharge. Oropharyngeal exam unremarkable. No cervical lymphadenopathy. Heart sounds norm, no signs of increased WOB or use of accessory muscles.",no,no,no,yes,no,no,no,no,0.9794035113911806,no,0.9545698940041247,no,0.14302862463875615,yes,0.7643430189166375,no,0.889079879527226,no,0.934165028016449,no,0.9226412575165917
+"**History**
+Pt. presents with a 1-week hx of persistent, non-productive cough, mainly during the day, sometimes disturbing sleep. No dyspnea. No intensity or frequency change in cough noted. No exposure to irritants/allergens, no recent URI hx, no recent sick contacts. Pt. is a non-smoker with no chronic lung diseases.
+
+**Physical Examination**
+VS: WNL. Lungs: clear, no wheezes/crackles/rhonchi. No accessory muscle use. Throat: no erythema/exudate. No lymphadenopathy. Cardiac/abd exams: unremarkable. Skin: no rash.",no,no,no,no,no,no,no,no,0.9347029453120391,no,0.983915219855847,no,0.8630285240758732,yes,0.11800255080440342,no,0.9287934208031089,no,0.9705454409909726,no,0.930518770043796
+"**History**
+Pt reports high fever x 3 days, with fatigue, chills, night sweats, ↓ appetite, and headaches. No dyspnea. No recent travel or exposure to illness. Good hydration and rest at home reported.
+
+**Physical Examination**
+Gen: Ill, diaphoretic, alert, and oriented.
+VS: Temp 39.5°C, HR 102, BP 124/82, RR 18, SpO2 98% RA.
+HEENT: No thrush, OP clear.
+Neck: Supple, no LAD.
+Chest: No abn sounds.
+CV: Reg rhythm, no murmurs.
+Abd: Soft, NT, no HSM.",no,no,no,no,no,high,no,no,0.9664026291431806,no,0.9723297277811832,no,0.08728301111497899,no,0.9082923112406941,no,0.7684276512601333,high,0.040028173498107666,no,0.7918981390141739
+"**History**
+Pt c/o intermittent HA x2 wks, describes as throbbing, frontal, worse w/ bright lights & noise. No N/V/visual changes. No recent lifestyle/med changes. Similar episode 3 mos ago, resolved w/o intervention.
+
+**Physical Examination**
+A&O, vitals WNL. PERRLA, EOMI, no CN deficits. Mild tenderness frontal/temporal regions. No trauma/infection signs. Neck supple, full ROM, no LAD.",no,no,no,no,no,no,no,no,0.9702489176300776,no,0.9784877956012739,no,0.9672065411570885,no,0.9579966388777021,yes,0.2682678414916982,no,0.9557332571319184,no,0.9359357313327451
+"**History**  
+Pt presents with persistent AM cough and nasal congestion/rhinorrhea. Has hx of hay fever, worse in spring/fall, and acknowledges smoking, worsening AM sx. No recent changes in smoking or new environmental exposures. Takes antihistamines with limited relief for current sx.
+
+**Physical Examination**  
+VS: Stable.  
+ENT: Nasal mucosa swollen with clear secretions. Throat slightly erythematous, no exudates. No palpable cervical LAD.  
+Chest: Scattered rhonchi on auscultation, no wheezing or crackles. Lung expansion symmetrical.  
+Pt in no acute distress but shows signs of upper respiratory tract involvement.",no,yes,no,no,no,no,no,yes,0.0953221106164493,yes,0.8252742103461661,no,0.948314352425282,yes,0.40268361834687294,no,0.886718060482382,no,0.932982567057845,no,0.9448313540086372
+"**History**
+Pt presented w/ severe cough x5 days, no assoc. fever. Sx include nasal congestion/runny nose. Denies dyspnea and resp pain. Increased nasal Sx noted, hx of hay fever. Limited relief from OTC meds, incl antihistamines. 
+
+**Physical Examination**
+Pt alert, mild distress due to cough. Lungs CTA; no wheezes, crackles, abn sounds. Nasal passages erythematous/swollen, no purulence. Oropharynx clear, non-erythematous. No lymphadenopathy. Vitals WNL, no fever.",no,no,no,yes,no,no,no,no,0.912411949483914,no,0.9658977638978293,no,0.812431862167532,yes,0.43075992676276476,no,0.8496612989398515,no,0.9669519573033147,no,0.9323690430715803
+"**History**
+Pt here for routine check-up, denies fever, dyspnea, CP, airway pain, sneezing, blocked nose, and cough. Reports stable health but c/o ongoing fatigue and occasional lightheadedness. Smoker, 10 years, interested in cessation options. Denies wt changes, appetite shifts, or Δ in physical activity except increased short-term fatigue. No current meds, NKDA.
+
+**Physical Examination**
+VS: BP 132/85, HR 78, RR 18, SpO2 97% on RA. Appears well-nourished, NAD. HEENT: OP clear, no nasal congest/drainage. Lungs: CTA B/L, no wheezes/rales/rhonchi. Card: RRR, no murmurs/rubs/gallops. Abd: Soft, NT/ND, BSx4. Ext: No edema, 2+ pulses B/L. Skin: Warm, dry, no rashes. Neck: Supple, no LAD/thyromegaly. Neuro: A&O x3, CN II-XII intact, normal strength/reflexes.",no,yes,no,no,no,no,no,no,0.9882701164676935,yes,0.9409060803065975,no,0.9752672754718555,no,0.9457005699959068,no,0.9240752808672866,no,0.944395080932718,no,0.9348814068652417
+"**History**
+Pt presents with resp pain, denies dyspnea. Pain is sharp, localized to anterior chest, worse with deep breaths, better with rest. Onset 2 days ago, no triggers. No hx of cardiac issues, trauma, or vigorous activity.
+
+**Physical Examination**
+Vitals: BP 120/80, HR 78, RR 16, SpO2 98% RA.
+Chest: Clear breath sounds bilat, mild tenderness on palpation. No wheezes, crackles, pleural rubs.
+CV: Normal heart sounds, no murmurs. Strong peripheral pulses.",no,no,no,no,yes,no,no,no,0.981603639027355,no,0.970000303272062,no,0.9592257164011052,no,0.9600538585761523,yes,0.5882573450595487,no,0.9603026998250423,no,0.9172035990222172
+"**History**
+Pt reports 3-day hx of dry cough, dyspnea, and wheezing. Asthma generally well-controlled; no recent allergen exposure, consistent w/ asthma inhalers. Nil changes in meds/environment recently.
+
+**Physical Examination**
+VS WNL, afebrile. Lungs: mild wheezing on expir all fields, RR↑, otherwise clear. Chest non-tender, no accessory muscle use. No cyanosis. ",yes,no,no,no,no,no,no,yes,0.9358269649329821,no,0.869891525374976,no,0.3600559833628385,3-day,0.2433540814589104,3-day,0.9217486383515311,3-day,0.797965187280042,3-day,0.9273483924969697
+"**History**
+Pt presents w/ mild dyspnea x1 wk, no cough. Dyspnea ↑ w/ exertion, ↓ w/ rest. Hx of smoking: 1 ppd x10 yrs, no recent changes. Denies recent env/occp exposure, no spec triggers. No recent significant life changes. 
+
+**Physical Examination**
+VS WNL. Resp exam: mild bilateral wheezing, no crackles/rhonchi, no distress at rest, lungs clear otherwise. CV exam: normal, no murmurs/gallops/JVD, no peripheral edema. Skin exam unremarkable. O2 sat 98% RA.",no,yes,no,no,no,no,yes,yes,0.5327116307178584,1,0.5011712162009984,1,0.7704926152908772,1,0.6115043066349466,1,0.897825107742646,1,0.952367089773032,1,0.9607448236399566
+"**History**
+Pt reports low-grade fever x 3 days. No resp discomfort, cough, or dyspnea. Denies exposure to sick contacts, recent travel, or changes in daily activities/environment. Pt is hydrating well and using OTC fever reducers with minimal relief. Oral intake and urination are normal. No loss of appetite or energy noted. No GI symptoms, rashes, or other systemic issues.
+
+**Physical Examination**
+Pt alert, NAD. VS: BP 120/78, HR 76, Temp 100.4°F (38°C), RR 16, O2 sat 98% RA. HEENT: Normocephalic, atraumatic, PERRLA, EOMI, conjunctiva clear, no ear disch/tenderness, throat WNL. Neck: Supple, no LAD. Lungs: CTA bilat, no wheezes, rhonchi, rales. CV: Regular rate/rhythm, no murmurs/gallops. Abd: Soft, NTND, normo BS. Skin: Warm, intact, dry, no lesions/rashes.",no,no,no,no,no,low,no,no,0.9806512319788999,no,0.9834346188674868,no,0.6451385007856156,no,0.9333322931875262,no,0.9030603067750018,high,0.38413527771942746,no,0.7917680991645263
+"**History**
+Pt reports SOB for 5 days, worsens with activity but present at rest. No resp pain. Denies change in meds, environmental exposures, similar episodes, recent travel, or stress. Active lifestyle; SOB impacting daily activities and exercise.
+
+**Physical Examination**
+- Gen: Mildly distressed due to SOB.
+- Resp: RR 22/min with accessory muscle use. No cyanosis. SpO2 95% RA.
+- CV: HR 88 bpm, regular, no murmurs.
+- HEENT: No nasal/pharyngeal abnl. Neck supple, no JVD.
+- Chest: CTA bilat; good air entry, no wheezes/rales/rhonchi.
+- Ext: No clubbing/edema. Pulses strong/equal. Skin normal turgor, no lesions.",no,no,no,no,no,no,no,no,0.5398839285546696,no,0.978157742330145,no,0.8979277930072552,no,0.9556771765998354,no,0.925389032272035,no,0.9375156379401215,no,0.9187203413085557
+"**History**
+Pt c/o nasal congestion and mild cough x 5 days. Nasal stuffiness and clear discharge present, denies dyspnea. Cough: infrequent, dry, mostly PM. No significant impact on daily activities, notes throat irritation. Smoking hx: ~10 yrs, has cut down significantly last yr.
+
+**Physical Examination**
+VS WNL. Nasal mucosa: mild swelling, clear discharge. Lungs: CTA B/L, no wheezes/crackles. Throat: mild erythema, no exudate. No LAD. CV: normal heart sounds, no murmurs.",no,yes,no,yes,no,no,no,no,0.9692939045527207,no,0.11337962718648686,no,0.3757573562131229,yes,0.8564745589405224,no,0.7835581818331272,no,0.9314939255437984,no,0.8819246128268585
+"**History**
+Pt reports nasal symptoms incl congestion and runny nose. High fever x3 days. Persistent scraping pain in trachea, worse with deep breaths and coughing. Productive cough with thick sputum; interferes with sleep and daily activities.
+
+**Physical Examination**
+Pt appears lethargic. Temp 39.2°C. Nasal mucosa inflamed, congested, rhinorrhea present. Chest ausc: coarse breath sounds, occasional bronchial wheezing. Trachea palp: no pain but grimaces with deep breaths. Pharyngeal erythema mild, no significant exudates. Sputum yellow-green.",no,no,no,yes,yes,high,no,no,0.9878506198216592,no,0.9664584089583822,no,0.004633918443646301,no,0.2288754897903696,yes,0.5629250223222323,high,0.42043500748633406,no,0.823400491821422
+"**History**
+Pt c/o sore throat and occasional HA for past week. Reports transient fatigue, denies fever, SOB, chest pain, cough, nasal blockage, or sneezing. Significant hx of smoking (15 years, 1 ppd). Attributes dry throat, especially in the AM, to smoking. Slight reduction in smoking rate recently. No recent wt/appetite/bowel habit changes.
+
+**Physical Examination**
+VS: BP 130/85, HR 78, RR 16, O2 sat 98% RA. Oropharynx: mild erythema, no tonsillar exudate/hypertrophy. Lungs clear bilat, no wheezes, rhonchi, rales. CV: no murmurs, rubs, gallops, S1, S2 WNL. Abd: soft, non-tender, no distension. No cervical LAD/neck swelling. Skin: no rashes/lesions.",no,yes,no,no,no,no,no,no,0.9839747480434046,yes,0.8811741804126981,no,0.9024065335205421,no,0.21337526414306507,no,0.9149713443487791,no,0.9453994872230347,no,0.9202166405673443
+"**History**
+Pt reports nasal congestion and light cough for 3 days. Describes burning pain in windpipe, which worsens when coughing. Has a hx of smoking, believes it may exacerbate sx. Has used OTC nasal decongestants with minimal relief. Burning sensation is persistent, unaffected by position/activity.
+
+**Physical Examination**
+VS stable. Nasal mucosa erythematous, mod swelling. Throat: mild redness, no exudates. Lung auscultation: clear breath sounds B/L, no wheezes or crackles. Heart sounds normal, no H&N lymphadenopathy.",no,yes,no,yes,yes,no,no,no,0.9819597658696002,yes,0.9661772234768321,no,0.9177956444505974,3,0.22642794015219725,1,0.05559379343968987,1,0.4491762572436869,1,0.404930639249419
+"**History**
+Pt c/o persistent cough during physical activity, no resp. pain. Long h/o smoking. No change in cough intensity/frequency except with exercise. No difficulties at rest or sed. activities. Daily activities apart from exercise do not trigger the cough.
+
+**Physical Examination**
+VS WNL. Lungs CTA B/L, no wheezes/crackles. Chest palp non-tender, no MS issues. RR unremarkable at rest. No resp. distress post-exercise.",no,yes,no,no,no,no,no,no,0.9845811497157556,yes,0.9624535590060838,no,0.9664286847577966,no,0.959323829589947,no,0.9081680042353946,no,0.9447203441314981,no,0.9067752657593714
+"**History**
+Pt here for routine f/u, reports no SOB or cough. Adheres to meds w/o issues; compliant with therapy. Leads active lifestyle, exercises regularly, balanced diet. Sleep stable, no changes in wt or appetite. Feels generally well, no new/unusual sx.
+
+**Physical Examination**
+VS stable, WNL. Chest CTA bilat, norm breath sounds. CV: RRR, no M/R/G. Abd soft, NT, no masses. Extremities: No edema, pulses 2+ bilat. PE unremarkable.",no,no,no,no,no,low,no,no,0.9914630629677421,no,0.9631075859119156,no,0.9646475138308125,no,0.9768124256404491,no,0.9417612090610543,no,0.9511046589835942,no,0.9079446882288287
+"**History**
+Pt here for f/u after starting new veg diet 1 mo ago. Reports ↑ energy, satisfaction with diet, no GI issues, and balanced sleep (7-8 hrs/nt). Engages in jogging 3x/wk. Mild muscle soreness occasionally. No surg hx. Vaccinations UTD.
+
+**Physical Examination**
+Vitals: BP 118/74, HR 68, Temp 36.5°C, SpO2 99%. Gen: Well-appearing, no pallor/jaundice. Cardiac: RRR, no abnl sounds. Lungs: Clear. Abd: Normoactive BS, no TTP. MSK: Full ROM, mild TTP over L calf, consistent with reported soreness.",no,no,no,no,no,no,no,no,0.9949596555476518,no,0.9739580644367595,no,0.9515239118111387,no,0.9734611044504184,yes,0.4341071649139713,36.5°C,0.14411125522100898,no,0.32491265242986267
+"**History**
+Pt presents with low-grade fever, tracheal scraping pain, and gurgling cough x several days. Denies nasal symp. Pt is a smoker, hx of smoking may affect current sx.
+
+**Physical Examination**
+Vitals: mildly elevated temp. Exam: coarse breath sounds, gurgles over trachea. No nasal discharge/inflam. Cervical LN: non-tender, normal size. Cardiac exam: unremarkable.",no,yes,no,no,yes,low,no,no,0.9833650544968302,yes,0.9836762848798516,no,0.6992422204890623,no,0.796366326739252,yes,0.2488715357410955,high,0.35209255842323006,no,0.8286485260290677
+"**History**
+Pt reports nasal congestion and rhinorrhea x1wk. Sx constant, worse at night, affect sleep. No cough, fever, or SOB. Denies recent allergen exposure or new environmental changes. Hydration good; using OTC saline spray with minimal relief.
+
+**Physical Examination**
+VS WNL. Nasal mucosa erythematous, swollen, clear discharge. No oropharyngeal erythema or exudate. Lungs CTA bilat, no wheezes/crackles. Heart RRR, no murmurs. No sig cervical LAD.",no,no,no,no,no,no,no,no,0.9858354122763348,no,0.9753278670743583,no,0.849191423417831,yes,0.7413825391966419,no,0.8145312474932985,no,0.9636083429859329,no,0.9323288115974733
+"**History**
+Pt reports nasal congestion and rhinorrhea x5 days, along with persistent, prickly dry cough, worse at night. No SOB. OTC antihistamines tried with minimal relief.
+
+**Physical Examination**
+VS WNL. Nasal mucosa swollen, clear discharge noted. Lungs clear, no wheezes/crackles. Pharynx erythematous, no exudate. Heart sounds reg, no murmurs. No LAD.",no,no,no,yes,no,low,yes,no,0.9867113230850215,no,0.97224546130745,no,0.8950988737928657,yes,0.7634227003797736,no,0.8573816419549525,no,0.9255297620761286,no,0.9594516862352841
+"**History**
+Pt c/o episodic HAs localized to the temples, described as mod-pressure sensations, sporadically appearing in the late afternoon. Notes adequate fluid intake and regular meals. No hx of migraines or visual disturbances. Pt maintains 8-hr work schedule and rarely misses sleep.
+
+**Physical Examination**
+Pt well-groomed and interactive. BP 118/76, P 70, RR normal. Head exam: no tenderness, temporal a. non-palpable, scalp normal. Neuro: coordination and reflexes WNL. Oral cavity and dental exam unremarkable.",no,no,no,no,no,no,no,no,0.9903636339556937,no,0.976482758702782,no,0.9705413206782926,no,0.9795870246789792,no,0.849046625026104,no,0.9597543032533609,no,0.9209442740797174
+"**History**
+Pt reports mild fever x2 days, no cough. Smokes approx. 1 pack/day for 15 years, unsuccessful attempts to reduce. Taking OTC acetaminophen for fever control, effective. Denies recent travel or exposure. Maintains ADLs but notes slight ↑ fatigue.
+
+**Physical Examination**
+VS: Temp: 99.1°F, BP: 122/78, Pulse: 82, RR: 16. GA: Well-nourished, mildly ill-appearing. Skin: W/D, no rash/lesions. Throat: Mildly erythematous, no exudate. Lungs: CTA bilat, no wheezes/crackles. Heart: RRR, no murmurs. Abd: Soft, NT, no HSM.",no,yes,no,no,no,low,no,no,0.9683048429701843,yes,0.8663067272436059,no,0.8352370986807864,no,0.9494938567122564,no,0.910354741852139,high,0.38392655366569295,no,0.8438206703582221
+"**History**
+Pt reports no resp pain or cough. Here for regular check-up, denies significant health changes. Active lifestyle w/ regular exercise, balanced diet. No allergies, no recent injuries or exposures. Normal sleep. No recent travel. Regular meds: multivitamin. Fam hx: moderate prevalence of HTN and DM, managed conservatively.
+
+**Physical Examination**
+VS WNL: BP 120/75, HR 72, RR 14, Temp 98.6°F. Pt well-nourished, NAD. CV: Normal S1/S2, no murmurs. Lungs clear bilat, no wheezes/crackles. Abd: non-tender, normoactive BS. No peripheral edema. Neuro: non-focal, no sensory/motor deficits. Skin: warm, dry, no rashes/lesions.",no,no,no,no,no,low,no,no,0.9926871619127267,no,0.9802436999692824,no,0.9694456669461892,no,0.9841919219143589,no,0.9655991111483305,98.6,0.04920874445271928,no,0.6916568997483398
+"**History**
+Pt presents w/ mild dyspnea and gurgling cough lasting ~1 wk. No resp pain. COPD hx and active smoker. No recent changes in smoking habits or exposure to irritants. Denies sig ∆ in exercise tolerance; mild dyspnea discomfort during ADLs.
+
+**Physical Examination**
+VS: Stable
+Resp: Mild wheezing bilat, gurgling on cough, no crackles/rales. BS slightly ↓ in lower lobes.
+CVS: S1/S2 WNL, reg rhythm, no murmurs. No peripheral edema/cyanosis. Pt appears NAD.",no,yes,no,no,no,no,no,yes,0.9879879526739801,yes,0.9476695202981237,no,0.328247988622018,no,0.6709583431562272,no,0.8436216786758398,no,0.839749327295788,no,0.8733727575408023
+"**History**
+Pt reports dyspnea, esp. worse in AM, interrupting sleep and difficulting morning activities. Smoker for several yrs. Dyspnea limits functions like stairs and chores. Recent lifestyle changes ineffective. Pt denies associated pain or increased mucus.
+
+**Physical Examination**
+VS: BP 128/82 mmHg, HR 78 bpm, SpO2 94% RA. Pt in no acute distress, slightly labored breathing at rest, minimal accessory muscle use. Lung exam: diminished breath sounds bilat, no wheezes/crackles. Cardiac: RRR, no murmurs. No cyanosis/clubbing. No edema noted.",no,yes,no,no,no,no,no,yes,0.39623736601837384,yes,0.9433670239039914,no,0.454512887663972,no,0.9126339959707068,no,0.9086196460181031,no,0.8466645651251851,no,0.8782301459853298
+"**History**
+Pt. c/o low-grade fever for 3 days, with malaise and fatigue. Denies cough or dyspnea. No recent travel or exposure to sick contacts. Pt. hydrating and resting, but fever persists, impacting daily activities. No chills, night sweats, or GI symptoms.
+
+**Physical Examination**
+VS: temp 37.8°C, HR 72, BP 120/80, RR 16, no distress. HEENT: no LAD or abn. CV: Nml heart sounds. Lungs: clear bilaterally, no wheezes/crackles. Abd + neuro exams unremarkable. Skin: warm, dry, no rash/lesions.",no,no,no,no,no,low,no,no,0.9735851173133455,no,0.9774334435587303,no,0.7310257125556481,no,0.9524379938155785,no,0.9361372900362065,no,0.1940699884225659,no,0.879039340945817
+"**History**
+Pt c/o persistent fatigue x few weeks, impacting daily tasks. No fever, cough, sneezing, SOB, or CP. No recent infections or major stress. Denies smoking or known allergies.
+
+**Physical Examination**
+Vitals WNL. CV: RRR, no murmurs. Resp: clear lungs. Abd: soft, non-tender, no organomegaly. MSK: ñ abnormalities. Neuro: normal.",no,no,no,no,no,no,no,no,0.9820761007018335,no,0.9828570633858388,no,0.9620463300333547,no,0.9514985789066202,no,0.9080064197407306,no,0.9638252008250148,no,0.9222904706206898
+"**History**
+Pt presents w/o sx of fever, dyspnea, chest pain, sneezing, blocked nose, or cough. Pt reports persistent fatigue for past 3 wks and difficulties with sleep. No recent diet or activity changes. Denies recent travel, sick contacts, or medication changes. No Hx of chronic health issues. Pt fully functional at work but feels easily overwhelmed and reports increased mistakes.
+
+**Physical Examination**
+Vitals: BP 120/80 mmHg, HR 76 bpm, RR 16, Temp 98.6°F.
+Gen: Well-appearing, alert, oriented, no distress.
+HEENT: NC/AT, throat wnl, TMs clear.
+CV: RRR, no m/r/g.
+Resp: CTA bilat, normal effort.
+Abd: Soft, NT, no HSM.
+Ext: No edema, FROM all jts.
+Neuro: AAO x3, CN II-XII intact, motor strength 5/5 in all exts.",no,no,no,no,no,no,no,no,0.9819198647339138,no,0.9775777813557859,no,0.9124653425482137,no,0.9338153151011225,no,0.9010003410240067,98.6,0.13550067657773912,no,0.06993375112230665
+"**History**
+Pt. reports episodes of dizziness upon standing quickly, increased over the past mo. These are brief with no LOC or vertigo. Maintains good hydration and a balanced diet. No recent changes in meds or new OTC drug use. No hx of similar sx, nor familial neurological issues. Sedentary job with long periods of sitting.
+
+**Physical Examination**
+Complete Px unremarkable. Orthostatic BP measurements showed slight drop in systolic on standing. HR steady and wnl. Resp and abd exams unremarkable. Neuro exam, including balance and coordination, normal. Skin normal, no lesions or concerning findings.",no,no,no,no,no,no,no,no,0.9917754087348242,no,0.9786177777402825,no,0.9808202362400154,no,0.9868390326327874,no,0.8968945828383776,no,0.9572572767232574,no,0.9407564540525261
+"**History**
+Pt. reports recent onset of mild abd. bloating and discomfort after meals over past few wks. Discomfort doesn't interrupt sleep, eases hrs postprandial. No abnormal stool patterns or blood observed. States holiday meals (high in processed foods and fats) may have exacerbated symptoms. No n/v or significant wt. loss.
+
+**Physical Examination**
+VS normal. Abd. soft, mild tenderness on deep palapation at epigastric region, no rebound tenderness or guarding. Bowel sounds normal. No hepatosplenomegaly. Skin exam shows no rash or jaundice. CV and resp. exams unremarkable.",no,no,no,no,no,no,no,no,0.99122241128619,no,0.9758116018521266,no,0.9705201611401628,no,0.9765859269664376,no,0.5439814398267304,no,0.9585314050172611,no,0.9255342787202506
+"**History**
+Pt reports persistent cough x10 days, non-productive, intermittent, w/o triggers. No recent travel, illness exposure, no smoking Hx. Noted worsening when lying down, slight improvement w/ hydration. OTC cough suppressants ineffective. No med allergies.
+
+**Physical Examination**
+VS: WNL. Lung ausc: clear B/L, no wheezing/rhonchi/rales. Upper airway: unremarkable. Throat: mild erythema, no exudates. No cervical LAD. Remainder PE unremarkable.",no,no,no,no,no,no,no,no,0.9732603613637718,no,0.968801823649307,no,0.7536239775579211,no,0.38733539422487395,no,0.862985020103022,no,0.9539638977326358,no,0.9371093602938466
+"**History**
+Pt reports episodic dizziness x1 month. Episodes brief, ~seconds, assoc. w/ positional changes (e.g. standing up quickly). No syncope, nausea. Sedentary lifestyle, limited exercise. Drinks moderate coffee in AM. Denies CP, SOB, fever. Has no PMHx of asthma, COPD, hay fever, smoking.
+
+**Physical Examination**
+BP 110/70 sitting, 105/68 standing; HR 70 sitting, 72 standing. No ortho hypotension. Heart: S1, S2 w/o murmur, gallop, rub. Lungs: CTA bilat. Neuro: Normal gait, coordination. Romberg neg, slight unsteadiness noted when standing feet together.",no,no,no,no,no,no,no,no,0.9914789199854753,no,0.9713902227008262,no,0.9764520104852942,no,0.9343533408573567,no,0.9190474239000188,no,0.9423686147731694,no,0.9540576442385379
+"**History**
+Pt c/o mild dyspnea x1wk, worse with exertion. Denies fever or cough. Hx of asthma, uses inhaler prn. Smokes 0.5 ppd x10 yrs. This dyspnea episode is abnormal for pt; asthma usually controlled well with meds. No recent env. or routine changes reported.
+
+**Physical Examination**
+VS: BP 120/80, HR 72, RR 18, SpO2 96% RA, afebrile.
+Gen: Alert, NAD.
+Chest: CTA bilat, no wheezes/rales/rhonchi.
+Cardio: RRR, no murmurs/gallops/rubs.
+Ext: No cyanosis/clubbing/edema.
+Pt comfortable at rest with nl effort of breathing.",yes,yes,no,no,no,no,no,yes,0.9938083673844224,0.5,0.1802981140392783,0,0.7055729220001158,0,0.9701208525899601,0,0.9957005029000034,0,0.9780334936442289,0,0.9658209249069769
+"**History**
+Pt pres'n w/o cough. Attempts active lifestyle chgs, esp smoking cessation, but facing struggles. Reports throat clearing needing most mrngs, no cough. No wt/app chgs, maintains healthy diet. No sig fam hx of resp conditions, no recent exp to irritants/allergens. Last visit 6 mos ago, routine check-up, no new meds/tx since.
+
+**Physical Examination**
+Vitals WNL. Heart: regular, no murmurs. BP normal. Lung ausc: clear, no wheezes/crackles, normal RR, adequate breath sounds all fields. No distress/accessory muscle use. Throat/oropharynx: mild redness, no exudates/growths. Cervical nodes non-tender, not enlarged. Pt appears stable, PE unremarkable.",no,yes,no,no,no,no,no,no,0.9873215334590306,no,0.9253528877142726,no,0.9738362845235581,no,0.9338645006465693,no,0.9286516166758843,no,0.9681329392434412,no,0.9437073183626793
+"**History**
+Pt c/o persistent chest pain, esp. w/ deep breaths or movements, x 5 days. No fever. No cough or phlegm. Denies recent travel, exposure to sick contacts, or chronic resp. conditions.
+
+**Physical Examination**
+VS stable. Resp: clear breath sounds bilat., no wheezes, rhonchi, or rales. Tender on palpation over L lower ribs. No deformity or trauma noted. CV: heart sounds nl, no murmurs, rubs, or gallops. Abd: soft, non-tender, no masses. Ext: no edema or cyanosis.",no,no,no,no,yes,no,no,no,0.9853522326705306,no,0.9687049175911491,no,0.9656530217454581,no,0.9799270636135204,yes,0.5715659363727528,no,0.9658665838152936,no,0.9129106514441858
+"**History**
+Pt presents w/ severe dyspnea x2 days, impeding daily activities. Reports a dry, non-prod cough, frequent throughout day. Hx of asthma w/ previous exacerbations during seasonal changes or allergens. Denies fever or recent resp infections. No new meds or triggers noted.
+
+**Physical Examination**
+VS WNL, except mild tachypnea. Pt appears in mild distress, dyspneic. Lung exam: bilateral expiratory wheezes, no crackles. Heart: RRR, no murmurs. No cyanosis/clubbing. SpO2: 94% RA. RR: 24 bpm. No accessory muscle use.",yes,no,no,no,no,no,yes,yes,0.9955449643574047,no,0.8883519709108623,no,0.7439580798500958,1,0.2143085043168708,1,0.4760967437864374,1,0.8268934836007443,1,0.9334283718658345
+"**History**
+Pt presents w/ severe cough, productive and persistent for 1 wk, worse at night. Reports dyspnea, noticeable during routine activities and mild exertion, worsening. Light, intermittent resp pain, esp during deep breaths or coughing. No hx of similar sxs. Ex-smoker (quit 5 yrs ago, smoked for 10 yrs), works in moderate dust. No recent travel. No GI or CV sxs
+
+**Physical Examination**
+Pt awake and alert, mod resp distress. RR 24, shallow breaths, accessory muscle use. Diminished breath sounds bilaterally w/ occasional wheezing and crackles, esp at lung bases. Tenderness over lower ribs, no sign chest wall deformity. No peripheral edema; extremities warm, well-perfused.",no,no,no,yes,yes,no,yes,yes,0.6502982317024925,no,0.5952016231476887,yes,0.19946413819975106,no,0.9304945501348809,yes,0.038107955909113866,no,0.7113954709373829,no,0.8811514834523482
+"**History**
+Pt c/o mild cough x several days. Denies SOB. Reports nasal congestion & runny nose impacting daily activities, esp. worse at night & disrupting sleep. Tried OTC decongestants with limited relief; no Rx meds tried yet.
+
+**Physical Examination**
+Vitals stable. Lungs: clear to auscultation bilaterally, no wheezing or crackles. Nasal exam: mod. congestion with mucosal swelling, clear rhinorrhea. Throat: mild erythema, no exudates. Oropharynx normal, no distress or labored breathing noted.",no,no,no,yes,no,no,no,no,0.979666433432502,no,0.9517007245471821,no,0.704927901246799,yes,0.8419647513581769,no,0.9280892724340958,no,0.9553864498528681,no,0.89124472758754
+"**History**
+Pt c/o productive cough x2 wks, producing thick, yellow sputum multiple times/d. No dyspnea. Smokes ½ ppd x10 yrs, more coughing in AM on waking. 
+
+**Physical Examination**
+BP 128/78, HR 78, RR 16, T 98.6°F.
+General: Well-nourished, NAD.
+Lungs: Bronchial breath sounds bilat lower lobes, scattered rhonchi on exhalation, no wheezes/rales.
+CV: RRR, no M/G.
+Abd: Soft, NT/ND, no hepatosplenomegaly.
+Ext: No edema, clubbing, or cyanosis.",no,yes,no,no,yes,no,no,no,0.8583730759387536,yes,0.5582572841766105,no,0.6845087665789176,no,0.07106937451655176,no,0.8534148980574854,98.6,0.44486596214195434,no,0.6583186086797549
+"**History**  
+Pt presents with a persistent low-grade fever x 5 days. Denies cough, resp pain, or dyspnea. No significant changes in daily activities or exposure to sick contacts. Regular temp monitoring shows mild elevation. Aside from mild fatigue, no other Sx or major health concerns noted; pt has been staying hydrated and resting. Recently attended an event practicing good hygiene, no recent travel hx.
+
+**Physical Examination**  
+VS: mild fever, no distress. HR and BP normal. Resp: clear, equal BS bilaterally, no wheezing/crackles/rhonchi. Throat: slightly erythematous, no exudates. LN: not enlarged. Abd exam unremarkable. No rashes or cutaneous issues noted. Pt well-nourished and NAD.",no,no,no,no,no,low,no,no,0.9805993798631593,no,0.9700580219165634,no,0.8545779546702563,no,0.8459894557497847,no,0.9216914855679206,no,0.012226060113715131,no,0.8950977004608837
+"**History**
+Pt presents with high fever x3 days, onset gradual, with chills + night sweats. Reports persistent productive cough with yellowish sputum. No relief from OTC antipyretics. Complains of fatigue and malaise affecting ADLs. Denies recent travel, sick contacts, new meds.
+
+**Physical Examination**
+VS: Temp 103°F, HR 110 bpm. Pt appears ill + fatigued. Lungs: coarse crackles + rhonchi bilat, no wheezes. Throat: mild erythema, no exudates. No lymphadenopathy. CV: WNL, Abd: soft, non-tender. Skin: no rash.",no,no,no,no,no,high,no,no,0.9840176786336878,no,0.9749611092492008,yes,0.07613250620472556,yes,0.20748448091734112,no,0.8090025586204914,high,0.13730521868486967,no,0.8402715079017096
+"**History**
+Pt c/o intermittent low back pain x1 month. Pain is dull, aching, worse with standing/lifting, relieved by rest and hot showers. No recent strenuous activity, trauma, or falls. Denies radiating pain, bowel or bladder issues. Sedentary work, no FH of back problems.
+
+**Physical Examination**
+VS stable. No visible deformity in lumbar spine; mild tenderness over L3-L5. No muscle spasms. Slight decrease ROM in forward flexion; normal in extension/lateral bending. SLR neg bilaterally. Neuro: normal strength, reflexes, and sensation in LE. Gait normal.",no,no,no,no,no,no,no,no,0.9914956117037913,no,0.9779314333268325,no,0.9727776304744976,no,0.9773130567414855,yes,0.5299639670444538,no,0.9641405943003707,no,0.9436065816211205
+"**History**
+Pt c/o episodes of dyspnea, esp during inhalation, w/ attack-related cough. No resp pain. Reports low-grade fever, no significant daily activity impact w/ the exception of more frequent resp symptoms. Hx of asthma, on regular meds; increased use of rescue inhaler noted recently. 
+
+**Physical Examination**
+Pt alert, oriented, mild tachypnea. Lungs: diffuse wheezing B/L, no stridor, no crackles. SpO2 95% RA. CVS: RRR, no murmurs. Abd: soft, non-tender. No accessory muscle use or nasal flaring. Temp. 37.8°C.
+",yes,no,no,no,no,low,no,yes,0.9955556751031006,no,0.9256588340751688,no,0.30277377094804847,no,0.5341547198556769,no,0.7751692369279322,37.8°C,0.13601361723278577,no,0.6559529082641713
+"**History**  
+Pt reports daily HAs x2 wks; takes OTC meds w/ mod relief. HAs described as tension-type, throbbing, centralized around temples. No photophobia, phonophobia, or aura. Indicates work stress as potential trigger; denies changes in lifestyle, ergonomics, or screen time.
+
+**Physical Examination**  
+VS stable. Pt appears in mild distress w/ squinting and brow furrowing. Neuro exam: normal cranial nerve function, no focal deficits. No sinus tenderness or neck rigidity. Audiometry and vision exams normal.",no,no,no,no,no,no,no,no,0.5491843918275071,no,0.9637991304296695,no,0.9467151568675702,no,0.9648534706286306,no,0.17648013026084464,no,0.9556836705070423,no,0.9349874024535002
+"**History**
+Pt reports chronic fatigue x 2 months, unrelieved by rest. No fatigue post-exertion; interferes with ADLs. No hx of lymphadenopathy or recurrent infx. Denies mood changes (depression/anxiety).
+
+**Physical Examination**
+Gen app: WNL. No pallor/jaundice/lymphadenopathy. Resp/CV exams nl. Thyroid non-enlarged, no palpable masses. Skin clear, no rashes/lesions.",no,no,no,yes,no,no,no,no,0.9874333599685707,no,0.9814859522395445,no,0.9618885295515363,no,0.9719569906794104,no,0.9046084462066775,no,0.9512143524867512,no,0.9411311075251473
+"**History**
+Pt presents w/ sig. dyspnea, esp. difficulty inhaling over past 2 days, worsening w/ exertion. Hx of asthma; usual inhaler less effective. No cough. No recent med changes or known allergen exposure.
+
+**Physical Examination**
+VS: RR 24, HR 102, SpO2 94% RA. Lungs: bilat. wheezing on insp., ↓ sounds in lower lobes. No accessory muscle use observed. Pt in mild distress due to breathing difficulty. Rest of exam otherwise unremarkable.",yes,no,no,no,no,no,no,yes,0.9957473386839726,no,0.8840917836070692,no,0.1845890027811819,no,0.855553594557928,no,0.698964546221455,no,0.7759071238059465,no,0.8784663295834301
+"**History**  
+Pt reports nasal sx incl stuffiness and occasional rhinorrhea for 1 wk. Sx worse in AM, with intermittent sneezing. No assoc cough or dyspnea. No new meds, recent travel, or env changes.
+
+**Physical Examination**  
+Exam: Nasal mucosa slightly erythematous, mild swelling, no polyps or significant discharge. Lungs CTA bilat, no wheezes/crackles. Post oropharynx mildly congested, no exudate. Breathing pattern normal, O2 sat WNL.",no,no,no,no,no,no,no,no,0.9776192812173843,no,0.9763466589019724,no,0.8861778606820572,yes,0.8586678800326619,no,0.9056352239991825,no,0.9614786409284276,no,0.9297703297603859
+"**History**  
+Pt presents w/ hx of low-grade fever x3 days, no chills/rigors. Denies cough, SOB, or chest pain. Reports feeling fatigued, more lethargic but no significant impact on DA. No other sx reported.
+
+**Physical Examination**  
+PE: Pt appears fatigued but NAD. Vitals: T 99.2°F, HR 78 bpm, BP 120/80 mmHg, RR 16, SpO2 98% RA. Chest: no resp distress, normal breath sounds, no wheezes/crackles/rubs, no thoracic TTP. CV and abd exams unremarkable.  ",no,no,no,no,no,low,yes,no,0.9858406571837013,no,0.9743701724104986,no,0.27197886810659877,no,0.9314294380037975,no,0.9266876829290888,low,0.2560161659203386,no,0.7924631014811984
+"**History**
+Pt c/o sudden onset of mild dizziness and occasional mild h/a over past week. Symptoms not linked to exertion; not severe; no interference with daily activities. Denies recent changes in meds or diet. No syncopal episodes. Hx of good general health, no other notable sx or med conditions.
+
+**Physical Examination**
+VS WNL. Neuro exam: no focal deficits. Coordination and balance tests: normal. Cardio exam: RRR, no murmurs/arrhythmias. Pupils round, reactive to light; EOMI.",no,no,no,no,no,no,yes,no,0.989865976731588,no,0.9794389681904867,no,0.9723275011700767,no,0.9615285562792124,no,0.9128524983428262,no,0.9594109965527338,no,0.9333589925305739
+"**History**
+Pt reports mild B knee pain x1 mo, worst w/ prolonged walking or stairs. Pain is achy & intermittent, w/o specific injury noted. No associated swelling, redness, or warmth. Denies fever, chest px, nasal blockage, respiratory symptoms. No prior joint issues; no family hx of joint disorders.
+
+**Physical Examination**
+B knees appear normal: no swelling/redness. Full ROM, c/o discomfort at extreme flexion. Neg stability tests (ant drawer, valgus stress). Normal patellar tracking, no effusion. Lower extremity pulses 2+ bilaterally. Normal gait/station.",no,no,no,no,no,no,no,no,0.9898957870580315,no,0.9789483768174864,no,0.9747184049459504,no,0.9792127132155063,no,0.0686847560342504,no,0.9393695010377966,no,0.9084955690764555
+"**History**
+Pt c/o persistent non-productive cough x2 wks, worse at night. No dyspnea or resp pain. Denies wheezing or hx of bronchitis. Noted onset after starting new exercise routine. No OTC meds tried, no clear environmental or allergen triggers.
+
+**Physical Examination**
+VS WNL. Clear lungs bilat, no wheezes, rales, or rhonchi. No accessory muscle use or retractions. Slightly erythematous throat, no exudates. CV and abdominal exam unremarkable.",no,no,no,no,no,low,no,no,0.6589510811151841,no,0.9564368682695287,no,0.8769130163744477,no,0.8507719980864408,no,0.9207818766007665,no,0.9539270970112084,no,0.9335124420788269
+"**History**
+Pt c/o new GI discomfort with bloating and irregular BMs x3 wks. Symptoms: intermittent abd cramps, occasional mild N, no V/D/C. No wt or appetite loss. Denies blood in stool or color change. Tried OTC antacids, minimal relief. Diet unchanged, no food triggers ID'd. No hx GI diseases.
+
+**Physical Examination**
+VS WNL. Abd slightly distended, soft, non-tender, normoactive BS. No masses or organomegaly. No jaundice or malnutrition signs. Resp & CV exam NL. Skin unremarkable; no dehydration.",no,no,no,no,no,no,no,no,0.9907321575574678,no,0.9816762659807978,no,0.9715658825418048,no,0.9597074357310333,no,0.09872003156996212,no,0.9607316391907057,no,0.9092678027768484
+"**History**
+Pt reports persisting cough, worsening with exercise. Mild SOB developed over past few months. Experiencing nasal congestion and runny nose, mostly mornings/evenings. Hx of smoking: approx. 1 pack/day for 15 yrs; efforts to quit unsuccessful.
+
+**Physical Examination**
+Pt comfortable at rest. Lungs: occasional wheezes post-exertion. RR: 20/min. Nasal passages: mild erythema, swollen mucosa, no polyps/discharge. Cardiac exam normal, RRR, no murmurs. Vitals: BP 130/85, HR 82.",no,yes,no,no,no,no,no,yes,0.9238253090435914,yes,0.4897940100902042,no,0.5047167095764077,yes,0.10704263959831586,no,0.8020350764424962,no,0.9020266177625016,no,0.9004514865459768
+"**History**
+Pt c/o mild resp pain, persistent cough (day and night), and nasal sx. Denies dyspnea. Smoker hx noted.
+
+**Physical Examination**
+Pt visibly uncomfortable w/ deep breaths. Lung ausc: scattered wheezes, no crackles. Nasal mucosa: inflamed/congested; rhinorrhea noted. O2 sat normal, RR normal. No other abn on chest PE.",no,yes,no,yes,yes,no,no,no,0.15625886509486514,yes,0.9463557058413968,no,0.6887712753869553,no,0.3161089114781746,yes,0.46779583266752,no,0.9250556540369121,no,0.8777032903435669
+"**History**
+Pt presents w/ 1-week hx of cough, intermittent and non-productive, mainly nocturnal. Denies SOB. Tried OTC cough meds with mild relief. No disruption to daytime activities but interrupts sleep at times. No recent travel, allergen, or irritant exposure. No similar past episodes.
+
+**Physical Examination**
+General: A&O, NAD.  
+Chest: CTA B/L, no wheezes, crackles, or rhonchi.  
+CV: RRR, no M/G/R.  
+Abd: Soft, NT, no organomegaly.  
+Ext: No cyanosis, clubbing, or edema.  
+VS: BP 125/80, HR 72, RR 18, SpO2 98% RA.",no,no,no,no,no,no,no,no,0.9463876577222718,no,0.9793608817411922,no,0.5597990010307969,yes,0.41746458323499747,no,0.8857284477706381,no,0.9503903163288403,no,0.8930610905542065
+"**History**
+Pt presents w/ resp pain (tension behind sternum) x few days. Complains of nasal congestion w/o productive cough but + dyspnea, esp. nighttime stuffiness. Denies recent URI or env. changes. Hx of asthma possibly contributing.
+
+**Physical Examination**
+Pt in mild resp discomfort w/ slightly elevated RR. Lung auscultation: mild b/L wheezing. No accessory muscle use. Nasal passages congested, no significant rhinorrhea. Remainder of PE unremarkable.",yes,no,no,no,yes,low,no,yes,0.712343493725976,no,0.8546652509736717,no,0.5615605471608363,no,0.504979363313503,yes,0.8631618734343124,no,0.8504408321483139,no,0.8456351777804204
+"**History**
+Pt c/o persistent itchy rash on lower legs and forearms x 1 mo. Red, inflamed patches, rough texture, intermittent mild bleeding from scratching. Denies new skincare products, detergents, allergen exposure. Tried OTC hydrocortisone with minimal relief. No hx of eczema, psoriasis, or other skin conditions. No personal/fam hx of skin CA.
+
+**Physical Examination**
+Derm exam: multiple erythematous, scaly plaques on extensor surfaces of lower legs and forearms. No signs of infxn (pus, warmth). Some excoriations from scratching, no systemic sx. LNs not enlarged. Cardiovasc. and resp. exams WNL. Hands/feet unaffected, cutaneous sensory tests normal.",no,no,no,no,no,no,no,no,0.9919842830221772,no,0.9849780245096509,no,0.9716436180142628,no,0.9678827212693947,no,0.9002215507282014,no,0.9544188732073721,no,0.9241060361975213
+"**History**
+Pt c/o low-grade fever x3 days, no dyspnea or cough. No recent travel or known infectious exposure. Reports slight fatigue and general malaise but good hydration and nutrition. No other new sx.
+
+**Physical Examination**
+VS stable, T: 99.8°F. CV and resp: WNL, clear lungs. Abdo: soft, nontender, normoactive BS. Skin: warm, no rashes/lesions. Neuro: intact, no deficits.",no,no,no,no,no,low,yes,no,0.9714360650872201,no,0.9721363200336515,no,0.7283255658337472,no,0.806256236231904,no,0.8850879445976507,low,0.23207879301024653,no,0.820759135986544
+"**History**
+Pt reports high fever x3 days, no chills/sweats. Denies dyspnea or resp pain. Fever persistent despite OTC antipyretics. Feels fatigued but func. No recent travel or exposure to infectious dz. ROS - no add. issues.
+
+**Physical Examination**
+Pt ill-appearing with flushed skin, T 102.5°F. Vitals: BP 120/80 mmHg, HR 76 bpm, RR 18, SpO2 98% RA. Chest/abd exam unremarkable, no ausc or tenderness. Oropharynx mild erythema, no exudates/tonsillar hypertrophy. No LAD.",no,no,no,no,no,high,no,no,0.9828980922330179,no,0.9716475208559557,no,0.7234134628646351,no,0.9616142517121303,no,0.9265789949326299,high,0.6760802048394201,no,0.8549949898537573
+"**History**
+Pt reports occasional dizziness & light-headedness for 3 days. Good hydration and balanced diet. No fever, dyspnea, chest pain, nasal blockage, or cough. No recent illness, travel, or contact with sick individuals. Sleeping 7-8 hrs/night, maintains daily physical activity incl. walking routine.
+
+**Physical Examination**
+BP 118/76 mmHg, HR 76 bpm, RR 18/min, temp 98.6°F. ENT: No infection/obstruction. Neuro WNL; CN II-XII intact. CVS & resp exams: NAD.",no,no,no,no,no,no,no,no,0.9878341801391154,no,0.9817717204875557,no,0.967276240385055,no,0.9739941808035546,no,0.8640540865419821,98.6,0.04731935843018342,no,0.3915141943313884
+"**History**
+Pt c/o intermittent LBP for past mo, worsened by prolonged standing and heavy lifting at work. Pain described as dull/aching, non-radiating. Tried rest and NSAIDs with partial relief. Denies numbness, tingling, or bowel/bladder incontinence. Exercise routine mostly ok, but some activities limited by pain.
+
+**Physical Examination**
+VS WNL. Normal posture and skin. Mild ROM restriction in lumbar spine with extension. Tenderness in lower lumbar paraspinal muscles. SLR test negative bilaterally. Reflexes and motor strength intact in LEs.",no,no,no,no,no,no,no,no,0.9907785692929167,no,0.9791478749927074,no,0.9760883278502788,no,0.975950559628448,yes,0.29676531688432445,no,0.9766584745901765,no,0.9336237496320008
+"**History**
+Pt presents w/ high fever and mild dyspnea. Reports persistent AM cough. Denies resp pain, congestion, or rhinorrhea. Smoker, possible contribution to sxs. Fever spiked 2 days ago, remains high. Pt reports fatigue and daytime drowsiness but no wheezing or choking. 
+
+**Physical Examination**
+VS: T 101.8°F, RR 18, CV normal, regular heart rate and rhythm, no murmurs. Resp: slightly diminished breath sounds B/L without rales, rhonchi, or wheezes. No palpable lymphadenopathy. Lung fields clear on percussion. Abd soft and nontender. Skin flushed, no rashes/discoloration. Elevated temps confirmed via axillary and oral thermometry.",no,yes,no,no,no,high,yes,no,0.9496420637779565,yes,0.9779936305945599,no,0.6955972931195956,no,0.578824112966897,no,0.9467399807542021,high,0.766371114277565,no,0.8814101957629872
+"**History**
+Pt c/o localized skin irritation on L forearm x5 days after recalling an insect bite from a recent hike. No new soaps, detergents, or known allergens.
+
+**Physical Examination**
+Small erythematous patch with slight edema on L forearm. No purulence or ↑ warmth. Skin exam otherwise unremarkable. Full ROM in underlying musculature/joints w/o pain.",no,no,no,no,no,no,no,no,0.9933606274985548,no,0.9752619223770969,no,0.9737275119791371,no,0.9417911859519026,no,0.9150857587238572,no,0.9673673403814715,no,0.9447666875791231
+"**History**
+Pt reports nasal sx including congestion and rhinorrhea for several days. Describes light CP and respiratory pain. Notes AM dyspnea, making daily tasks hard in AM. Hx of smoking, possibly worsening sx. No recent travel or exposure to known respiratory pathogens.
+
+**Physical Examination**
+Pt in NAD but mild tachypnea. Nasal congestion w/o significant erythema or DC. Reduced airflow BL w/ occasional wheezes on lung auscultation; no crackles. RR slightly elevated, O2 sat WNL. Cardiac exam unremarkable. No cyanosis or clubbing in extremities.",no,yes,no,yes,yes,no,no,yes,0.6774935138974572,yes,0.9515622918773206,no,0.5428196120964013,yes,0.38793594894616346,yes,0.4185612382739274,no,0.6653942432674222,no,0.8841515376086975
+"**History**  
+Pt presents w/ burning pain in windpipe lasting several days, worse w/ deep breaths. Experiencing AM cough, improvements later. Denies fever. Hx significant for chronic smoking, no recent changes in smoking habits.
+
+**Physical Examination**  
+Pt appears well, no acute distress ( NAD). Lung auscultation (Ausc) nl. Mild tender on chest palpation, no anatomical issues. Vitals WNL: BP nl, HR reg, RR nl. Skin exam unremarkable. No systemic illness indicated.",no,yes,no,no,yes,no,no,no,0.9792095353206515,yes,0.9691722628979891,no,0.9345473766083618,no,0.6662636530439981,no,0.008292872020551456,no,0.9334681627428547,no,0.924735979687638
+"**History**
+Pt here for routine check-up, reports fatigue & mild jt pain. Difficulty sleeping x2 wks, may contribute to tiredness. Appetite & weight stable, exercises 30 min/day. No recent travel, stress, or med changes. Fam hx non-contributory.
+
+**Physical Examination**
+VS WNL. Pt well-nourished, NAD. Heart: S1 S2 normal, no murmurs. Lungs: CTA bilat. Abd: soft, NT. No lymphadenopathy, skin abnorm. ROM in all jts normal, no swelling.",no,no,no,no,no,no,no,no,0.9902521261007485,no,0.9765791806176755,no,0.9685418445839197,no,0.9772631810812558,yes,0.22951173183301565,no,0.9739141347543032,no,0.9394973773265528
+"**History**
+Pt reports nasal congestion and rhinorrhea x3 days. No fever/chills. Mild persistent cough worsens at night, slightly affecting sleep. Denies dyspnea, asthma hx, recent sick contacts, or OTC meds taken for relief.
+
+**Physical Examination**
+Clear nasal discharge; mild nasal mucosa erythema. Throat: mild erythema, no exudate. Chest ausc: clear, no wheezes/rales/rhonchi. Lungs bilaterally clear. Vitals WNL. No cervical lymphadenopathy. Exam otherwise unremarkable.",no,no,no,yes,yes,no,yes,no,0.9875109040714276,no,0.96811811270129,no,0.9111062186229306,yes,0.6732482336819706,no,0.8179754348637295,no,0.9364821137077026,no,0.914238659552399
+"**History**
+Pt reports productive cough, esp AM with attacks, plus moderate dyspnea with nighttime nasal stuffiness disrupting sleep. No fever. Hx of asthma, still smokes despite prior advice.
+
+**Physical Examination**
+VS WNL. Lungs: scattered wheezes on expiration. No nasal d/c or swelling. CV: heart sounds clear, no abnormalities. No skin cyanosis or peripheral edema.",yes,yes,no,no,no,no,no,yes,0.9961282599436785,yes,0.5078073496778029,no,0.78821103367401,no,0.6981561905396467,no,0.8648723057085047,no,0.9294534936519286,no,0.9294988777608715
+"**History**
+Pt c/o respiratory pain and exertional dyspnea x few weeks, no worsening. Denies cough, fever. Smoker, ~1 pack/day x 15 yrs.
+
+**Physical Examination**
+Vitals: BP 130/85, HR 75, SpO2 94% RA.
+Gen: NAD, well-nourished.
+Lungs: ↓BS bilat, no wheeze/rales.
+CV: RRR, no murmurs.
+Abd: Soft, NT, no HSM.
+Ext: No clubbing, cyanosis, edema.",no,yes,no,no,yes,no,no,no,0.9304094795152607,yes,0.9630853046565083,no,0.8411347484637796,no,0.9635164260143897,yes,0.577047124254072,no,0.9623994752540482,no,0.9080121336122178
+"**History**
+Pt reports low-grade fever x3d with no dyspnea, resp pain, or cough. Denies recent travel, sick contacts, toxic exposures. Reports slight ↓ in appetite and energy, no wt loss. Occupational hx: desk job, light exercise (5x/wk). Similar sx 1 yr ago, resolved spon.
+
+**Physical Examination**
+Pt well-nourished, NAD. Vitals: BP 120/80, HR 72, RR 18, Temp 100.4°F (38°C). CV: Normal heart sounds, no murmurs. Lungs: CTAB. Abd: Soft, nontender, no HSM. H&N: No LAD. Throat: Slight erythema, no exudates. Skin: No rashes or abn.",no,no,no,no,no,low,no,no,0.990692730130336,no,0.9766100100136648,no,0.7266962799797388,no,0.9152333130481678,no,0.8320099632556245,high,0.09498414505269209,no,0.8125537483116018
+"**History**
+Pt c/o intermittent low back pain x3 wks, esp. after prolonged sitting/physical exertion. Pain is dull/achy, relieved by rest/stretching, no meds needed. Denies bowel/bladder issues.
+
+**Physical Examination**
+VS WNL. Posture erect, gait stable. Spine: no deformities. Mild lumbar tenderness on palpation. ROM full, slightly P on back extension. Neg SLR test. Lower limb strength/reflexes normal.",no,no,no,no,no,no,no,no,0.9841640471085974,no,0.9764039576396516,no,0.973076591708979,no,0.9659981842261873,yes,0.07484400272405084,no,0.9592554511092295,no,0.9368028666025467
+"**History**
+Pt reports intermittent dizziness w/o syncope, commonly with quick changes in position. No visual dist, HA, or falls. Diet includes regular meals, moderate salt, and adequate fluid intake. No med changes.
+
+**Physical Examination**
+BP: 125/80 seated, 118/72 standing. HR: 72 seated, 88 standing. CV and resp exams: normal. Neuro exam unremarkable: cranial nerves, strength, reflexes WNL. Gait steady, no imbalance.",no,no,no,no,no,no,no,no,0.9801447320047156,no,0.9718296028139303,no,0.9660810652043886,no,0.9660875120535689,no,0.9105902920500277,no,0.9209848742102185,no,0.9074991578005458
+"**History**
+Pt presents w/ recurrent episodes of dyspnea + assoc. wheezing. Reports freq. cough, esp. during/after attacks, which are exacerbated by exertion and exposure to dust/strong odors. Hx of asthma, with ↑ use of rescue inhaler last few weeks. Pt mentions stricter adherence to asthma mgmt plan but symptoms persist. No changes in routine or meds, no new stressors reported.
+
+**Physical Examination**
+RR and effort notable, pt appears to use accessory muscles of respiration. Auscultation reveals diffuse wheezing in all lung fields. No significant expiratory phase prolongation. Chest is symmetric w/o deformities/tenderness. O2 saturation at rest WNL. No abnormal systemic findings in CV or GERD exams.",yes,no,no,no,no,no,no,yes,0.9966065031537431,no,0.9287774690625819,no,0.6708843826332612,no,0.4266765226030623,no,0.7252249137319131,no,0.9125453061043255,no,0.9432138353161913
+"**History**
+Pt c/o persistent fatigue x1 month, affecting daily activities. Adequate sleep reported, but wake up unrefreshed. Diet: balanced meals, occasional vitamins. No wt Δ, appetite, or thirst changes. 
+
+**Physical Examination**
+VS WNL. PE benign. Thyroid palpation normal. Normal cap refill, no signs of anemia/dehydration. No LAD. Cardiopulmonary: clear, no congestion or irregular rhythm. ",no,no,no,no,no,no,no,no,0.9854661652300818,no,0.9792898652908292,no,0.9632622802740686,no,0.96815323969251,no,0.8752176520886376,no,0.9619750933664966,no,0.9364709295456105
+"**History**
+Pt reports persistent fatigue x3 wks. Joint discomfort mainly in morning, improves throughout day. No change in appetite, weight, lifestyle. Denies new meds, different environment, allergens exposure. No recent travel or change in activities. No syncope, dizziness, or falls. 
+
+**Physical Examination**
+VS stable, WNL. No lymphadenopathy, skin rash, lesions. Heart: normal sounds, no murmurs, gallops, or rubs. Lungs clear B/L. Abdomen: non-tender. MSK: no deformities, ROM normal.",no,no,no,no,no,no,no,no,0.980875516423708,no,0.979362348835373,no,0.9598878264529643,no,0.9785146860590491,yes,0.06886442515360064,no,0.9741135893150571,no,0.9428586485767915
+"**History**
+Pt reports a mild sore throat for 5 days, worsened by swallowing solids. First noticed after a social event. Decreased appetite reported, but denies fever, cough, chest pain. Warm salt water gargles provide temporary relief. No recent exposure to ill individuals.
+
+**Physical Examination**
+Vitals stable, afebrile. Slight oropharyngeal redness without exudate/lesions. No significant lymphadenopathy. Lung auscultation clear, no adventitious sounds. Nasal passages clear, no congestion.",no,no,no,no,no,no,no,no,0.9885829227606554,no,0.9764507743923678,no,0.9052645848798896,yes,0.037918971676870306,no,0.6780791548310514,no,0.9473514852014744,no,0.9345833948895719
+"**History**
+Pt presents w/ high-grade fever x 48 hrs, peaks at night. Accompanied by gen. malaise and fatigue. Denies cough, dyspnea, chest tightness. Reports sig. weakness and occasional dizziness during upright activities. No recent travel or exposures. Using acetaminophen, minimal relief.
+
+**Physical Examination**
+Pt visibly fatigued, no acute distress. Vitals: T 39.2°C, HR 98 bpm, BP 120/80 mmHg, RR 16. Cardio/pulm exam: clear breath sounds, no wheezes/crackles. No lymphadenopathy or organomegaly. Skin: warm, no rashes/lesions.",no,no,no,no,no,high,yes,no,0.9837878849816303,no,0.9736201102286234,no,0.8335873495311878,no,0.9627121561626943,no,0.7375787729539311,high,0.30982956182757315,no,0.855905263791323
+"**History**
+Pt reports SOB provoked by physical activity; denies cough, resp pain. Noted ⬆️ frequency, affecting daily activities. Known hx of asthma, uses inhaler PRN. No recent med changes or known triggers. SOB worse during exercise/brisk walking, improves with rest/inhaler.
+
+**Physical Examination**
+Clear and equal breath sounds bilateral on ausc. No wheezes, crackles, resp distress at rest. CV exam: regular rate/rhythm, no murmurs/extra sounds. No cyanosis, clubbing, or peripheral edema. Spirometry results unavailable at this visit.",yes,no,no,no,no,no,no,yes,0.9960320379840358,no,0.9234250421815465,no,0.8400072666176609,no,0.9075716827963208,no,0.8458115562665793,no,0.9185257580920743,no,0.889281364419621
+"**History**  
+Pt reports mild abd discomfort x2 wks, lasting few hrs daily. Describes dull ache, LLQ, partly relieved by BM but returns 1 hr later. No changes in stool form/freq, denies blood in stool. Diet & hydration consistent, high in fiber/fluids.
+
+**Physical Examination**  
+VS WNL: BP 118/75, HR 70, RR 15, Temp 36.7C. Abd soft, + normoactive BS all 4 quadrants, no organomegaly, masses, or tenderness. Neg for rebound tenderness or guarding. No hernias. Skin WNL, no rashes/discoloration.",no,no,no,no,no,no,no,no,0.9846708975878673,no,0.981340805089544,no,0.9713372138298192,no,0.9646408337015263,no,0.44917114061107755,36.7C,0.3520505264641913,36.7C,0.2730338172597342
+"**History**
+Pt presents with high fever x3 days. No cough or dyspnea. Reports fatigue, night sweats, chills. No recent travel or sick contacts. Slight ↓appetite but hydration ok. No Δ in urine output/bowel habits. Source of infection unclear based on limited symptoms.
+
+**Physical Examination**
+Vitals: T 39.2°C; BP 120/80; HR 102; RR 18; SpO2 98% RA. Ill-appearing, flushed skin. Heart: normal sounds, regular rhythm. Lungs: clear bilaterally, no wheezing/crackles. Abd: soft, non-tender, normoactive BS. No LAD or rashes.",no,no,no,no,no,high,yes,no,0.9797905556708277,no,0.9708407462828432,no,0.7048400713295917,no,0.9331606531745131,no,0.8994504556733386,high,0.26624203374110295,no,0.7608897003662024
+"**History**
+Pt c/o low-grade fever x few days. Denies nasal sx like congestion/runny nose, dyspnea, and cough. Generally feels unwell, using OTC antipyretics with partial relief. No recent travel, sick contacts, or significant changes in activity and diet.
+
+**Physical Examination**
+Vitals: Temp 100.4°F, HR 78 bpm, RR 16, BP 118/74. Pt comfortable, NAD. HEENT: clear oropharynx, no sinus tenderness. Lungs: CTA bilat; Heart: RRR, no murmurs/gallops/rubs. Abd: soft, non-tender, normoactive BS. No LAD or skin rashes. PE unremarkable except for fever.",no,no,no,no,no,low,no,no,0.9717400074484157,no,0.976386432135753,no,0.4968109329014159,no,0.8931661464762655,no,0.8196288823428861,high,0.14357065553399218,no,0.654839478696053
+"**History**
+Pt presents with high fever x 3 days, along with dry cough. Denies dyspnea. Reports fatigue and malaise. OTC antipyretics minimally effective. No recent travel or known sick contacts. Works in a public-interaction job.
+
+**Physical Examination**
+Vitals: Temp 102.3°F, HR 98 bpm, BP 120/78 mmHg, RR 16, SpO2 98% RA. Pt appears fatigued, NAD. CV: heart regular, no murmurs/rubs/gallops. Lungs: clear bilat, no wheezes, rales, or rhonchi, no accessory muscle use. Exam otherwise WNL.",no,no,no,yes,no,high,yes,no,0.9820720433973829,no,0.9688715641570484,no,0.5479420917492644,yes,0.01876427905163658,no,0.775207755562552,high,0.6975331879339867,no,0.8794395694528723
+"**History**
+Pt presents w/ nasal congestion and rhinorrhea for 1 week. Denies dyspnea, fever, or cough. Nasal sx cause discomfort and disrupt sleep. No recent travel, allergen exposure, or sick contacts. Using OTC antihistamines w/ minimal relief.
+
+**Physical Examination**
+VS WNL. Nasal exam: mucosal erythema, moderate swelling, clear discharge. Sinuses non-tender. Lungs: CTA bilaterally, no wheezes/rales/rhonchi. Oropharynx: no erythema/exudate. Neck: supple, no LAD.",no,no,no,no,no,no,no,no,0.9913326573980599,no,0.9775759442426895,no,0.9380476462023281,yes,0.6700906390875013,no,0.8410891104743257,no,0.9660937893897511,no,0.9402240633013466
+"**History**
+Pt c/o nasal sx w/ congestion & rhinorrhea for 1 wk. Denies cough or dyspnea. Discharge clear, assoc. w/ sneezing. No change in activity or notable environmental triggers. Sx started post outdoor event. Reports sleep difficulty due to nasal blockage and occasional PND.
+
+**Physical Examination**
+VS: WNL. Nasal: swollen, erythematous turbinates w/ mucous discharge. No sinus tenderness. Throat: mildly inflamed pharynx, no exudate/lesions. Lungs: clear sounds bilat, no wheezes/crackles.",no,no,no,no,no,no,no,no,0.9950954278788389,no,0.9768991806289405,no,0.934413156659125,yes,0.7603551754192146,no,0.7336271789057655,no,0.9453235696117587,no,0.9339860334555095
+"**History**
+Pt reports general tiredness but no fever. Unspecified issue could be work-related stress. Leads an active life with no impact on performance in outdoor sports. No sneezing, sinus congestion, or nasal issues. Regular hydration.
+
+**Physical Examination**
+Afebrile. Resp and CV exam within normal limits (WNL). Clear lung sounds B/L, no wheezes or abnormal sounds. CV rhythmic, stable. No resp discomfort noted. Abdomen non-tender. Lymph nodes normal.",no,no,no,no,no,no,no,no,0.9851730884229227,no,0.9511120475531567,no,0.9461020307376232,no,0.9702485644259874,no,0.9042451866370552,no,0.949578631523634,no,0.9374888720628046
+"**History**
+Pt presents c/o low-grade fever x48 hrs. Denies dyspnea or cough. Pt is a smoker and reports no significant changes in health or lifestyle. Pt concerned about persistent fever; denies major discomfort or activity changes except slight fatigue. No recent travel, known exposure, or new meds.
+
+**Physical Examination**
+VS stable: T 99.1°F, BP 120/78 mmHg, HR 74 bpm, RR 16, SpO2 98% RA. Pt NAD. Skin warm, dry; mucous membranes moist. CV: RRR, no murmurs/rubs/gallops. Pulm: clear breath sounds, no wheezing/rales/rhonchi. Abd: soft, NT/ND, no organomegaly. Neuro: grossly WNL.",no,yes,no,no,no,low,no,no,0.9864557769505155,yes,0.9858097303617377,no,0.8242963988914148,no,0.9589524195946683,no,0.9177681124608257,low,0.1720071495148562,no,0.8675977396107606
+"**History**
+Pt w/ 48h hx of low-grade fever, no cough, no resp pain. Long hx of smoking (15 yrs). No OTC or RX meds taken. Reports general fatigue, maintaining routine activities and work.
+
+**Physical Examination**
+Mildly uncomfortable but NAD. Vitals: T 100.4°F, HR 78 bpm, BP 122/78. Lungs CTA bilat. Heart sounds: S1 S2 nl, no murmurs. Abd soft, non-tender, BS present. Neck supple, no LAD. Skin warm, no rashes.",no,yes,no,no,no,low,no,no,0.9849549932999967,yes,0.9721418539838005,no,0.6213869397936869,no,0.9468887457989932,no,0.8167397808416108,low,0.058329666065756625,no,0.8426482531573555
+"**History**
+Pt c/o fatigue & light-headedness x2 wks. Reports gen. aches & abd. tightness. Denies recent travels/exposures. Diet & hydration adequate. No vomiting, diarrhea, or other GI sx. Concerned about weakness impacting daily activities.
+
+**Physical Examination**
+VS stable & WNL. No rashes or skin abnorm. No peripheral edema. CVS: reg. HR, no murmur. Abd: non-tender, no masses/HSM. Neuro: normal reflexes & strength.",no,no,no,no,no,no,no,no,0.9710489467427699,no,0.9816988130713308,no,0.9128978106956112,no,0.9788783600281928,no,0.036841909866905276,no,0.9527598347384408,no,0.9328286413357948
+"**History**
+Pt c/o high fever x3 days. Experienced light cough, no dyspnea. Fever peaks PM w/ mild chills, decreases AM. OTC antipyretics partly effective. No new travel, exposure. Feels fatigued, appetite reduced but present.
+
+**Physical Examination**
+Pt appears alert, fatigued. V/S: temp 38.6°C. Cardio-resp exam: no tachycardia, clear lung fields. Normal RR, no wheezing, no accessory muscle use. Other systems: no abn.",no,no,no,yes,yes,high,yes,no,0.979091380230524,no,0.969481762890557,no,0.295259406022504,no,0.062273706053993794,no,0.7696814902001401,high,0.37809496898693384,no,0.7443621641300071
+"**History**
+Pt denies fever, SOB, CP, sneezing, or cough. Hx of smoking. Reports mild evening throat irritation, no dysphagia. Weight/appetite stable. Regular light exercise. Concerns over hoarseness persisting for weeks. No significant lifestyle/mood changes.
+
+**Physical Examination**
+Pt A&O. Vitals stable: BP 120/80, HR 70, RR 14, SpO2 98%, T 36.8°C. ENT: mild pharyngeal erythema, no exudates/masses. Lungs CTA bilat, no wheezes/rales/rhonchi. Cardiac: regular rhythm, no murmurs. Abd: soft, non-tender, active BS. No cervical lymphadenopathy.",no,yes,no,no,no,no,yes,no,0.9729228634121676,yes,0.9818150474995487,no,0.9773258339162612,no,0.9513582859864712,no,0.8657341374978029,36.8°C,0.3419300434396986,no,0.230841152405114
+"**History**
+Pt c/o persistent cough, mainly attack-related. Reports nighttime dyspnea (stiffness affecting sleep) and denies resp pain. Has hx of asthma with recently exacerbated attacks.
+
+**Physical Examination**
+VSS, afebrile. Lung ausc: occasional expiratory wheeze, no crackles. O2 sat normal at rest. Breath sounds clear, no dimin LUTEFQRST bishopmeleri.
+
+",yes,no,no,no,no,no,yes,yes,0.994963618268182,no,0.8871573600101124,no,0.4283397848805852,no,0.6054441736259326,no,0.7892237642762715,no,0.9386392330448579,no,0.8542601584223282
+"**History**
+Pt reports intermittent dyspnea, esp. w/ exertion and nocturnally, plus persistent low-grade fever. No cough. Has well-managed asthma. Recent exposure to family member w/ respiratory infection (2 wks ago).
+
+**Physical Examination**
+Vitals: Low-grade fever. Lungs: Mild wheezing; Pulse ox normal at rest, drops w/ activity. CV: Normal. Pt appears not in acute distress.",yes,no,no,no,no,low,no,yes,0.9928703936310206,no,0.9065473457906029,yes,0.3329969258518983,2 wks ago,0.008692872591132605,no,0.5713623668554603,2 wks ago,0.541228364254694,2 wks ago,0.7871955382149142
+"**History**
+Pt reports intermittent R knee pain and stiffness, worsening over the past month. Pain is a dull ache, increasing with physical activity. Denies prior similar sx and no hx of trauma. No fever, dyspnea, CP, nasal issues, or cough. No known allergies or relevant PMH for respiratory or chronic conditions. 
+
+**Physical Examination**
+Vitals: BP 115/78, P 68. R knee: mild swelling, no redness/warmth. Mild tenderness over medial joint line. ROM slightly reduced, no crepitus/locking. Joint stability intact. No neurovascular deficits. Systemic exam unremarkable.",no,no,no,no,no,no,no,no,0.9915245366267441,no,0.9806125591585695,no,0.9775151331274088,no,0.985886061364496,yes,0.13669189744206306,no,0.9657463090098493,no,0.9461660269466884
+"**History**
+Pt c/o nasal sx incl. congestion & watery rhinorrhea x1 wk. Assoc. itching, sneezing. Persistent prickly cough chiefly at night, disrupting sleep. No dyspnea. Sx onset gradual, coinciding w/ increased dust exposure at work. No lifestyle, diet, or recent travel changes noted.
+
+**Physical Examination**
+Pt in no acute distress. Nasal turbinates swollen, clear mucoid discharge present, mild erythema, no polyps/abn. Oropharynx mildly erythematous, no exudates. Lungs clear to auscultation B/L, no wheezes/crackles. Normal resp effort. CV exam: RRR, no murmurs. Remaining PE unremarkable.",no,no,no,yes,no,low,no,no,0.19798812997302034,no,0.9428589771078583,no,0.7270777816359086,yes,0.8582074538949052,no,0.8188525889250895,no,0.9363242427643136,no,0.9190678392061417
+"**History**
+Pt c/o intermittent sore throat and sensation of lump, more noticeable after talking/swallowing. Reports scratchy feeling, denies febrile episodes, dyspnea, CP, blocked nose, sneezing, or cough. No WL or appetite ∆. Smoker.
+
+**Physical Examination**
+VS WNL. Oropharynx with mild erythema, no exudate or significant swelling. Neck palpation: no lymphadenopathy/masses, no tenderness. Lungs CTA bilat, no wheezes/crackles/rhonchi. Heart RRR, no murmurs. Nasal passages/oral cavity unremarkable aside from noted oropharyngeal erythema.",no,yes,no,no,no,no,yes,no,0.9912860155807094,yes,0.8983154803222756,no,0.9721398973389482,no,0.8822008610594657,no,0.8173402568786305,no,0.9462758117917089,no,0.774818729968454
+"**History**
+Pt c/o nasal congestion and light, persistent cough for several days. No fever, HA, or myalgia. Increased nasal discharge and occasional sneezing noted, likely due to seasonal changes. Pt reports no SOB.
+
+**Physical Examination**
+PE: Clear nasal discharge, erythematous nasal mucosa. Lungs clear bilat, no wheezes/crackles. Slightly erythematous pharynx without exudate. No cervical LAD. Temp WNL. SpO2 98% RA.",no,no,no,yes,no,no,no,no,0.9884015409504779,no,0.9772891169969209,no,0.8390729994869397,yes,0.6196034721150302,no,0.9200229561501011,no,0.9397885456790538,no,0.9467952517190392
+"**History**
+Pt c/o severe cough x1 wk; disruptive esp. at night, causing poor sleep. Reports nasal congest. with freq. sneezing and runny nose. Uses OTC cough suppressants and saline spray with little relief. No rec. travel hx or known exposure to pathogens. No lifestyle/env changes.
+
+**Physical Examination**
+Gen: Alert, mild distress from coughing/congestion.
+HEENT: Infl. nasal mucosa, bil. mucopurulent d/c. Slightly erythematous pharynx, no tonsillar exudate/hypertrophy.
+Chest: CTA bil., normal sounds, scattered exp wheezes.
+Vitals: BP 122/78, P 88, reg.",no,no,no,yes,no,no,yes,no,0.6287966030053083,no,0.9719543907717123,yes,0.2160242642593309,yes,0.6515673831810641,no,0.7033774193588644,no,0.8362451235637491,no,0.9514267228094978
+"**History**
+Pt reports occasional frontal HAs over past 2 wks, moderate in intensity, partially relieved by OTC analgesics. Denies associated visual changes, photophobia, or phonophobia. No N/V. HAs not linked to specific activities/foods. Sleep pattern and appetite unchanged.
+
+**Physical Examination**
+VS WNL. Neuro exam unremarkable; CN II-XII intact. No frontal/temporal tenderness on palpation. No sinus congestion/tenderness observed. Funduscopic exam normal. Cervical spine ROM full. No cervical/submandibular LAD.",no,no,no,no,no,no,no,no,0.9824732455126546,no,0.9752303705376405,no,0.9718458984252595,no,0.9657675994900032,no,0.3299583470309361,no,0.9621569840183217,no,0.9373971263781574
+"**History**
+Pt reports 3-day hx of high fever, significant nasal congestion, and runny nose. Severe, persistent cough is disrupting sleep and daily activities. No dyspnea. No recent exposure to respiratory illnesses. Increased work stress and reduced sleep noted in past few weeks. Denies new meds or recent travel. Increased fluids and rest offer minimal relief.
+
+**Physical Examination**
+Vitals: high temp, other vitals WNL. Nasal mucosa erythematous and inflamed, with profuse clear rhinorrhea. Lungs: no wheezing/crackles, occasional rhonchi due to cough. Oropharynx: mild erythema, no exudates. No cervical LAD or other abnormalities.",no,no,yes,yes,no,high,yes,no,0.9701823800022923,no,0.6712468527708653,yes,0.2198957641068031,yes,0.9421664906566866,no,0.7157033260953615,high,0.6209607910616618,no,0.9122406433040572

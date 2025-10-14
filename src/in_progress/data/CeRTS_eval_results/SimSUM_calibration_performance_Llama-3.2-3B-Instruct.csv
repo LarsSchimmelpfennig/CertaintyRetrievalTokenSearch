@@ -1,0 +1,9 @@
+feature,n,brier_score,roc_auc,mean_conf,accuracy,ece,mean_incorrect_conf,calibration_plot
+asthma,1000,0.055454,0.830592,0.923561,0.934,0.034515,0.647646,data/CeRTS_SimSUM_calibration_plots/asthma__Llama-3.2-3B-Instruct.png
+smoking,1000,0.015714,0.988779,0.900423,0.993,0.092577,0.443202,data/CeRTS_SimSUM_calibration_plots/smoking__Llama-3.2-3B-Instruct.png
+pneu,1000,0.063995,0.918199,0.832773,0.952,0.119227,0.387313,data/CeRTS_SimSUM_calibration_plots/pneu__Llama-3.2-3B-Instruct.png
+common_cold,1000,0.148559,0.612843,0.879197,0.827,0.096487,0.779971,data/CeRTS_SimSUM_calibration_plots/common_cold__Llama-3.2-3B-Instruct.png
+pain,1000,0.18318,0.668053,0.904445,0.772,0.132445,0.832361,data/CeRTS_SimSUM_calibration_plots/pain__Llama-3.2-3B-Instruct.png
+fever,1000,0.10223,0.794306,0.859314,0.857,0.051929,0.586111,data/CeRTS_SimSUM_calibration_plots/fever__Llama-3.2-3B-Instruct.png
+antibiotics,1000,0.188748,0.492573,0.935023,0.789,0.146023,0.933972,data/CeRTS_SimSUM_calibration_plots/antibiotics__Llama-3.2-3B-Instruct.png
+ALL_FEATURES,7000,0.108268,0.661015,0.890676,0.874857,0.056911,0.764878,data/CeRTS_SimSUM_calibration_plots/ALL_FEATURES__Llama-3.2-3B-Instruct.png
