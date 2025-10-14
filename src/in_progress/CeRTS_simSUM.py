@@ -20,8 +20,6 @@ from CeRTS_utils import *
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
-print('updated test')
-
 # bnb_config = BitsAndBytesConfig(
 #     load_in_32bit=True,
 # )
@@ -37,7 +35,7 @@ print('updated test')
 #model_id = 'Qwen/Qwen2.5-1.5B-Instruct'
 #model_id = 'meta-llama/Llama-3.2-3B-Instruct'
 
-for model_id in ['meta-llama/Llama-3.2-3B-Instruct', 'Qwen/Qwen2.5-1.5B-Instruct']:
+for model_id in ['Qwen/Qwen2.5-1.5B-Instruct', 'meta-llama/Llama-3.2-3B-Instruct']:
 
     model_name = model_id.split('/')[-1]
 
@@ -51,6 +49,8 @@ for model_id in ['meta-llama/Llama-3.2-3B-Instruct', 'Qwen/Qwen2.5-1.5B-Instruct
         #quantization_config = bnb_config,
         token = os.getenv("HF_TOKEN")
     )
+
+    tokenizer.pad_token = tokenizer.eos_token
 
     df = pd.read_csv('data/SimSUM_updated.csv')
 
@@ -69,14 +69,17 @@ for model_id in ['meta-llama/Llama-3.2-3B-Instruct', 'Qwen/Qwen2.5-1.5B-Instruct
     #print(df.head(2))
     #print(df.keys())
 
-    print('running 1k test', len(test_df))
+    running_df = test_df
+    df_size = '1k_test'
 
-    OUT_PATH = f'data/CeRTS_SimSUM_1k_test_split_{model_name}.csv'
+    print('running', len(running_df))
+
+    OUT_PATH = f'data/CeRTS_SimSUM_{df_size}_split_{model_name}.csv'
 
     out_df = pd.read_csv(OUT_PATH)
     print(len(out_df))
-    #df = df[~df['advanced_text'].isin(out_df['compact_note'])]
-    #print(len(df))
+    running_df = running_df[~running_df['advanced_text'].isin(out_df['compact_note'])]
+    print(len(running_df))
 
     #df = df[~df['advanced_text'].isin(prompt_tuning_set['compact_note'])]
 
@@ -159,7 +162,7 @@ for model_id in ['meta-llama/Llama-3.2-3B-Instruct', 'Qwen/Qwen2.5-1.5B-Instruct
     print('using file', OUT_PATH)
     with open(OUT_PATH, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        for _, row in test_df.iterrows():
+        for _, row in running_df.iterrows():
             #print(row)
             #print(row['text'])
             #print('advanced')

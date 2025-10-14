@@ -8,6 +8,24 @@ import sys
 
 from CeRTS_utils import *
 
+
+def _as_json_literal(val):
+    """
+    Emit a JSON-safe literal:
+    - numbers stay unquoted
+    - everything else is JSON-escaped and quoted
+    """
+    try:
+        # keep numeric types as-is
+        if isinstance(val, (int, float)) and math.isfinite(val):
+            return str(val)
+        # avoid treating numeric-like strings as numbers here; upstream canonicalizer
+        # (canonical_numeric_key) should already have converted them to int/float.
+        return json.dumps(val)
+    except Exception:
+        return json.dumps(str(val))
+
+
 #Keep track of the distirbution of the variable JSON region.
 #When a comma is generated, provide the LLM with the start of the next JSON and then record again.
 
@@ -182,65 +200,49 @@ def CeRTS_output_dist(messages, features, model, tokenizer, device, beam_width=5
         if not answer_distributions:
             assistant_prompt += '{"' + feature + '": '
         else:
-            prev_answer = answer_distributions[-1][0][0] #from the last answer, get the answer with the highest score
-            assistant_prompt += prev_answer
+            prev_answer = answer_distributions[-1][0][0]  # top answer from previous feature
+            # --- CHANGED: ensure correct quoting/escaping for the previous value ---
+            assistant_prompt += _as_json_literal(prev_answer)
             assistant_prompt += ',"' + feature + '": '
 
-        #print(assistant_prompt)
+        # ... (no other changes below) ...
         inputs = append_assistant_prompt(messages, assistant_prompt, tokenizer, device)
-        #measures the output distribution and merges identical answers
-        net_inputs = {'sequences': inputs}  # or include "pkv": precomputed_pkv if you have it
+        net_inputs = {'sequences': inputs}
         results = multi_beam_search(model, tokenizer, net_inputs, device, beam_width=beam_width, max_steps=max_steps)
-        d_val_probs = {} #Combines the probabilities of JSON's with the same value
+        d_val_probs = {}
         for log_prob, tokens in results:
-            gen_text = tokens['gen_text'].strip() #only includes the text from the variable region
+            gen_text = tokens['gen_text'].strip()
 
-            #This allows the LLM to generate only a response for one feature, if it closes the JSON early there is no penalty.
             if ',' in gen_text:
                 gen_text = gen_text.split(',')[0]
-                #json_str = '{"' + feature + '": ' + f'{str(gen_text)}' + '}'
-
             elif '}' in gen_text:
-                #print('end bracket')
                 gen_text = gen_text.split('}')[0]
-                #json_str = '{"' + feature + '": ' + f'{str(gen_text)}' + '}'
 
-            #data = extract_first_json(json_str)
             gen_text = _strip_outer_quotes(gen_text).strip()
 
-            #Now the same numeric answers are combined before selecting what the top answer is.
             if gen_text is None:
-                #print('val is none')
                 val = "missing"
             else:
-                # raw_val = data.get(feature)
-                val = canonical_numeric_key(gen_text)
-                if val is None:                    # not a clean number, keep as trimmed string
-                    val = str(gen_text).strip()
+                val_num = canonical_numeric_key(gen_text)
+                val = str(val_num) if val_num is not None else str(gen_text).strip()
 
-                if val in d_val_probs:
-                    d_val_probs[val] += math.exp(log_prob)
-                else:
-                    d_val_probs[val] = math.exp(log_prob)
+            d_val_probs[val] = d_val_probs.get(val, 0.0) + math.exp(log_prob)
 
-        answer_distributions.append(sorted(d_val_probs.items(), 
-                                           key=lambda item: item[1], reverse=True)) #[(answer, score)]
+        answer_distributions.append(sorted(d_val_probs.items(), key=lambda item: item[1], reverse=True))
         
     return answer_distributions
-        
-    #return the top anser and the confidence for each feature
+
     
-        
 
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(device)
 
     bnb_config = BitsAndBytesConfig(
-        load_in_8bit=True,
+        load_in_16bit=True,
     )
 
-    model_id = 'meta-llama/Llama-3.1-8B-Instruct'
+    model_id = 'Qwen/Qwen2.5-1.5B-Instruct'
 
     print("Loading model...")
     tokenizer = AutoTokenizer.from_pretrained(model_id, token = os.getenv("HF_TOKEN"))
