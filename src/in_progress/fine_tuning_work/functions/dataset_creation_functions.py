@@ -38,7 +38,7 @@ def create_gold_standard_extractions(df, json_temp):
     df['correct_output'] = correct_output_list
     return df
 
-def format_for_standard_SFT(df, template, zero_shot = True):
+def format_for_standard_SFT(df, template, zero_shot = False):
     "Given a dataframe of training data with columns 'advanced_text' and 'correct_output' this function will create a list of dicts to function as the training dataset."
     
     # Throw an error if we don't have the correct cols
@@ -57,7 +57,7 @@ def format_for_standard_SFT(df, template, zero_shot = True):
             tmp_train_prompt.append({'role':"assistant", 'content': df.loc[i, 'correct_output']})
             training_data.append(tmp_train_prompt)
         else:
-            tmp_train_prompt = gen_prompt(df.loc[i, 'advanced_text'], template.keys(), template)
-            tmp_train_prompt.append({'role':"assistant", 'content': df.loc[i, 'correct_output']})
-            training_data.append(tmp_train_prompt)
+            tmp_messages_prompt = gen_prompt(df.loc[i, 'advanced_text'], template.keys(), template)
+            final_tmp_prompt = {'prompt':tmp_messages_prompt, 'completion':[{'role':"assistant", 'content': df.loc[i, 'correct_output']}]}
+            training_data.append(final_tmp_prompt)
     return training_data

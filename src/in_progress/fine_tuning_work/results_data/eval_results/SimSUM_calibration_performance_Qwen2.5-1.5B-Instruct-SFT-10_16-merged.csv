@@ -1,0 +1,9 @@
+feature,n,brier_score,roc_auc,mean_conf,accuracy,calibration_plot
+asthma,1000,0.008031,0.489037,0.972192,0.992,results_data/SimSUM_calibration_plots/asthma__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+smoking,1000,0.006984,0.593687,0.935916,0.998,results_data/SimSUM_calibration_plots/smoking__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+pneu,1000,0.018938,0.717906,0.910888,0.991,results_data/SimSUM_calibration_plots/pneu__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+common_cold,1000,0.156479,0.705148,0.693459,0.868,results_data/SimSUM_calibration_plots/common_cold__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+pain,1000,0.081171,0.807926,0.794984,0.929,results_data/SimSUM_calibration_plots/pain__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+fever,1000,0.064864,0.775975,0.858224,0.94,results_data/SimSUM_calibration_plots/fever__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+antibiotics,1000,0.197856,0.618168,0.589396,0.794,results_data/SimSUM_calibration_plots/antibiotics__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
+ALL_FEATURES,7000,0.076332,0.847243,0.822151,0.930286,results_data/SimSUM_calibration_plots/ALL_FEATURES__models_Qwen2.5-1.5B-Instruct-SFT-10_16-merged.png
