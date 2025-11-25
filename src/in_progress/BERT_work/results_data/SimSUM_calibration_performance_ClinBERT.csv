@@ -1,0 +1,9 @@
+feature,n,brier_score,roc_auc,mean_conf,accuracy,calibration_plot
+asthma,1000,0.002963,0.96222,0.999406,0.997,results_data/SimSUM_ClinBERT_calibration_plots/asthma__ClinBERT.png
+smoking,1000,0.00095,1.0,0.99997,0.999,results_data/SimSUM_ClinBERT_calibration_plots/smoking__ClinBERT.png
+pneu,1000,0.002558,0.846205,0.996922,0.997,results_data/SimSUM_ClinBERT_calibration_plots/pneu__ClinBERT.png
+common_cold,1000,0.084203,0.825199,0.849554,0.903,results_data/SimSUM_ClinBERT_calibration_plots/common_cold__ClinBERT.png
+pain,1000,0.02681,0.866082,0.978334,0.97,results_data/SimSUM_ClinBERT_calibration_plots/pain__ClinBERT.png
+fever,1000,0.033312,0.883893,0.960878,0.963,results_data/SimSUM_ClinBERT_calibration_plots/fever__ClinBERT.png
+antibiotics,1000,0.205149,0.675809,0.581152,0.788,results_data/SimSUM_ClinBERT_calibration_plots/antibiotics__ClinBERT.png
+ALL_FEATURES,7000,0.050849,0.908118,0.909459,0.945286,results_data/SimSUM_ClinBERT_calibration_plots/ALL_FEATURES__ClinBERT.png

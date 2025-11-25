@@ -1,0 +1,18 @@
+in_progress/fine_tuning_work/models
+in_progress/fine_tuning_work/models
+in_progress/BERT_work/playground.ipynb
+in_progress/BERT_work/BERT_models
+
+# Ignore notebook checkpoints and Python caches under fine_tuning_work
+in_progress/fine_tuning_work/**/.ipynb_checkpoints/
+in_progress/fine_tuning_work/**/__pycache__/
+in_progress/fine_tuning_work/**/*.pyc
+in_progress/BERT_work/**/.ipynb_checkpoints/
+in_progress/BERT_work/**/__pycache__/
+in_progress/BERT_work/**/*.pyc
+
+# Common repo-wide patterns (kept here if needed)
+# Uncomment to apply repo-wide ignores
+# **/.ipynb_checkpoints/
+# **/__pycache__/
+# **/*.pyc
