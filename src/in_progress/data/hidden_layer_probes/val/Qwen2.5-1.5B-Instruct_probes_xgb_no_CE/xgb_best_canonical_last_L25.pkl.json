@@ -1,0 +1,10 @@
+{
+  "ordering": "canonical",
+  "best_pool": "last",
+  "best_layer": 25,
+  "brier": 0.06403688305822551,
+  "auroc": 0.9306279376705218,
+  "ece": 0.04647451782696042,
+  "df_path": "middle_layer_CE/CE_SimSUM_val_split_Qwen2.5-1.5B-Instruct.csv",
+  "emb_dir": "hidden_layers_answers/Qwen2.5-1.5B-Instruct_embeddings"
+}

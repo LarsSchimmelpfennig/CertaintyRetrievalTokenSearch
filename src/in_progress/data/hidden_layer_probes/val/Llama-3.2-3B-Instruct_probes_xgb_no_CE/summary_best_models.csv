@@ -1,0 +1,3 @@
+ordering,best_pool,best_layer,brier,auroc,ece,df_path,emb_dir
+canonical,last,24,0.06127911725020727,0.8935223916882968,0.04760507903568302,middle_layer_CE/CE_SimSUM_val_split_Llama-3.2-3B-Instruct.csv,hidden_layers_answers/Llama-3.2-3B-Instruct_embeddings
+random,last,19,0.06911970376786827,0.8725500711471496,0.054602681683861676,middle_layer_CE/CE_SimSUM_val_split_Llama-3.2-3B-Instruct.csv,hidden_layers_answers/Llama-3.2-3B-Instruct_embeddings

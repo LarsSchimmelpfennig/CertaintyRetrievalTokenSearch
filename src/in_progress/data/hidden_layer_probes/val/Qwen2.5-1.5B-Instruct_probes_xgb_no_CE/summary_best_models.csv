@@ -1,0 +1,3 @@
+ordering,best_pool,best_layer,brier,auroc,ece,df_path,emb_dir
+canonical,last,25,0.06403688305822551,0.9306279376705218,0.04647451782696042,middle_layer_CE/CE_SimSUM_val_split_Qwen2.5-1.5B-Instruct.csv,hidden_layers_answers/Qwen2.5-1.5B-Instruct_embeddings
+random,last,28,0.09212858502572811,0.8659822318210035,0.0693921471700828,middle_layer_CE/CE_SimSUM_val_split_Qwen2.5-1.5B-Instruct.csv,hidden_layers_answers/Qwen2.5-1.5B-Instruct_embeddings

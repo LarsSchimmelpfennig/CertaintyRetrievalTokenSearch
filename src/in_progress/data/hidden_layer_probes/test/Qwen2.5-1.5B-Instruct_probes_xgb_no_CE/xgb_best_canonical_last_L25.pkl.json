@@ -1,0 +1,21 @@
+{
+  "model_name": "Qwen2.5-1.5B-Instruct",
+  "root_train": "SimSUM/train_hidden_layers_answers",
+  "root_test": "SimSUM/test_hidden_layers_answers",
+  "ordering": "canonical",
+  "best_pool": "last",
+  "best_layer": 25,
+  "train_brier": 0.06564288614095103,
+  "train_auroc": 0.9427923757300275,
+  "train_ece": 0.052369618323331694,
+  "train_internal_eval_n": 11200,
+  "test_brier": 0.06380232127961483,
+  "test_auroc": 0.9457519654019452,
+  "test_ece": 0.05136708302253195,
+  "test_n": 7000,
+  "df_train": "SimSUM/LLM_responses_runs/probe_SimSUM_train_split_Qwen2.5-1.5B-Instruct.csv",
+  "df_test": "SimSUM/LLM_responses_runs/probe_SimSUM_test_split_Qwen2.5-1.5B-Instruct.csv",
+  "emb_train": "SimSUM/train_hidden_layers_answers/Qwen2.5-1.5B-Instruct_embeddings",
+  "emb_test": "SimSUM/test_hidden_layers_answers/Qwen2.5-1.5B-Instruct_embeddings",
+  "append_ce": false
+}

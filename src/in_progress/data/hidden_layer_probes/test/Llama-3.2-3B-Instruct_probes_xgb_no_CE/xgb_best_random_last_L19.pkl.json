@@ -1,0 +1,21 @@
+{
+  "model_name": "Llama-3.2-3B-Instruct",
+  "root_train": "SimSUM/train_hidden_layers_answers",
+  "root_test": "SimSUM/test_hidden_layers_answers",
+  "ordering": "random",
+  "best_pool": "last",
+  "best_layer": 19,
+  "train_brier": 0.075568165360507,
+  "train_auroc": 0.8987663278877456,
+  "train_ece": 0.06370104904471982,
+  "train_internal_eval_n": 11200,
+  "test_brier": 0.07460298293229924,
+  "test_auroc": 0.9038285332723592,
+  "test_ece": 0.058562132338895866,
+  "test_n": 6998,
+  "df_train": "SimSUM/LLM_responses_runs/probe_SimSUM_train_split_Llama-3.2-3B-Instruct.csv",
+  "df_test": "SimSUM/LLM_responses_runs/probe_SimSUM_test_split_Llama-3.2-3B-Instruct.csv",
+  "emb_train": "SimSUM/train_hidden_layers_answers/Llama-3.2-3B-Instruct_embeddings",
+  "emb_test": "SimSUM/test_hidden_layers_answers/Llama-3.2-3B-Instruct_embeddings",
+  "append_ce": false
+}

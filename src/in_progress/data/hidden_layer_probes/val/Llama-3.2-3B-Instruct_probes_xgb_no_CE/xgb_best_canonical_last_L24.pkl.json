@@ -1,0 +1,10 @@
+{
+  "ordering": "canonical",
+  "best_pool": "last",
+  "best_layer": 24,
+  "brier": 0.06127911725020727,
+  "auroc": 0.8935223916882968,
+  "ece": 0.04760507903568302,
+  "df_path": "middle_layer_CE/CE_SimSUM_val_split_Llama-3.2-3B-Instruct.csv",
+  "emb_dir": "hidden_layers_answers/Llama-3.2-3B-Instruct_embeddings"
+}
